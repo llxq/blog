@@ -20,7 +20,7 @@ module.exports = {
         indent: ['error', 4, { ignoredNodes: ['JSXElement*', 'JSXElement',], },],
         // 禁止行尾分号
         semi: ['error', 'never',],
-        
+
         // 强制 JSX 元素使用 4 个空格缩进
         'react/jsx-indent': ['error', 4,],
         // 强制 JSX 属性使用 4 个空格缩进，且缩进到第一层
@@ -36,5 +36,7 @@ module.exports = {
             exports: 'always-multiline', // 多行导出的末尾必须有逗号
             functions: 'never', // 函数参数列表的末尾不能有逗号
         },],
+        'react/jsx-curly-spacing': [2, { when: 'always', children: true, },],
+        'react/jsx-tag-spacing': [2, { beforeSelfClosing: 'always', },],
     },
 }
