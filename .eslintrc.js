@@ -36,7 +36,9 @@ module.exports = {
             exports: 'always-multiline', // 多行导出的末尾必须有逗号
             functions: 'never', // 函数参数列表的末尾不能有逗号
         },],
+        /* 控制 JSX 中花括号内外的空格。设置为 { when: 'always', children: true } 意味着在花括号内外始终添加空格。 */
         'react/jsx-curly-spacing': [2, { when: 'always', children: true, },],
+        /* 控制 JSX 标签的间距，特别是自闭合标签的处理。{ beforeSelfClosing: 'always' } 要求在自闭合标签之前总是添加空格。 */
         'react/jsx-tag-spacing': [2, { beforeSelfClosing: 'always', },],
     },
 }
