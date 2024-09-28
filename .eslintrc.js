@@ -17,7 +17,7 @@ module.exports = {
         // 强制使用单引号
         quotes: ['error', 'single',],
         // 强制使用 4 个空格缩进，忽略 JSX 元素
-        indent: ['error', 4, { ignoredNodes: ['JSXElement*', 'JSXElement',], },],
+        indent: ['error', 4, { ignoredNodes: ['JSXElement', 'JSXFragment', 'JSXOpeningElement', 'JSXClosingElement',], },],
         // 禁止行尾分号
         semi: ['error', 'never',],
 
