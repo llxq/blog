@@ -1,7 +1,9 @@
+import { UserCard } from '@/components/userInfo/UserCard'
 import { useAuthAction } from '@/hooks/useAuthAction'
 import { useUserInfo } from '@/hooks/useUserInfo'
 import Image from 'next/image'
 import type { MouseEvent } from 'react'
+import { Popover } from 'antd'
 
 const UnLoginComponent = () => {
     const loginAndRegistry = useAuthAction<MouseEvent<HTMLSpanElement>>(event => {
@@ -31,18 +33,20 @@ const LoginComponent = () => {
     })
     return (
         <div className="gap-6 items-center flex">
-            <Image className="cursor-pointer" title="好友" src="/people.png" alt="好友" width={ 16 } height={ 16 } />
+            <Image className="cursor-pointer" title="好友" src="/people.png" alt="好友" width={ 20 } height={ 20 } />
             <Image className="cursor-pointer" title="消息" src="/messages.png" alt="消息" width={ 16 } height={ 16 } />
             <Image className="cursor-pointer" title="通知" src="/notifications.png" alt="通知" width={ 16 } height={ 16 } />
-            <div className="cursor-pointer hidden md:block" onClick={ openUserInfo }>
-                {
-                    avatar ? (
-                        <Image src={ avatar } alt="头像" width={ 32 } height={ 32 } />
-                    ) : (
-                        <div className="rounded-full w-[32px] h-[32px] bg-blue-100"></div>
-                    )
-                }
-            </div>
+            <Popover content={ <UserCard /> } placement="topRight" arrow={ false } trigger="click">
+                <div className="cursor-pointer hidden md:block w-max" onClick={ openUserInfo }>
+                    {
+                        avatar ? (
+                            <Image src={ avatar } alt="头像" width={ 32 } height={ 32 } />
+                        ) : (
+                            <div className="rounded-full w-[32px] h-[32px] bg-blue-100"></div>
+                        )
+                    }
+                </div>
+            </Popover>
         </div>
     )
 }
