@@ -9,11 +9,11 @@ const Navbar = () => {
     return (
         <div className="flex items-center justify-between h-24 navbar__container">
             { /* 左边 */ }
-            <div className="md:hidden lg:block w-[20%]">
+            <div className="md:hidden lg:block w-[10%]">
                 <Link href="/" className="font-bold text-blue-600 text-xl">Logo</Link>
             </div>
             { /* 中间 */ }
-            <div className="hidden md:flex w-[60%] text-sm items-center justify-between">
+            <div className="hidden flex-1 md:flex text-sm items-center justify-between gap-4">
                 <div className="flex gap-6 text-gray-600">
                     <Link href="/" className="flex gap-2 items-center">
                         <Image className="w-4 h-4" src="/home.png" alt="主页" width={ 16 } height={ 16 } />
@@ -34,7 +34,7 @@ const Navbar = () => {
                 </div>
             </div>
             { /* 右边 */ }
-            <div className="w-[20%] flex justify-end gap-2 xl:gap-8 items-center">
+            <div className="flex justify-end gap-2 xl:gap-8 items-center">
                 <UserInfoNavbar />
                 <MobileMenu />
             </div>
