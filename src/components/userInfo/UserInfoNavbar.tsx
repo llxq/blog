@@ -1,34 +1,53 @@
+import { useAuthAction } from '@/hooks/useAuthAction'
 import { useUserInfo } from '@/hooks/useUserInfo'
-import Link from 'next/link'
+import Image from 'next/image'
+import type { MouseEvent } from 'react'
 
 const UnLoginComponent = () => {
-    return (
-        <div className='flex items-center gap-2 text-sm'>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                fill="currentColor"
-            >
-                <circle cx="12" cy="8" r="2.5" />
+    const loginAndRegistry = useAuthAction<MouseEvent<HTMLSpanElement>>(event => {
+        console.log(event, '123')
+    })
 
-                <path d="M12 12c-3 0-5 1.5-5 4v1h10v-1c0-2.5-2-4-5-4z" />
+    return (
+        <div className='items-center flex'>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 20 20"
+                 width="24"
+                 height="24"
+                 fill="currentColor"
+                 className="cursor-pointer">
+                <circle cx="10" cy="7" r="2.5" />
+                <path d="M10 10c-3 0-5 1.5-5 4v1h10v-1c0-2.5-2-4-5-4z" />
             </svg>
-            <Link href="/" className='cursor-pointer text-sm text-gray-600 select-none'>登录/注册</Link>
+            <span className='cursor-pointer text-sm text-gray-600 select-none' onClick={ loginAndRegistry }>登录 / 注册</span>
         </div>
     )
 }
 
-const LoginComponent = ({ userName }: { userName: string }) => {
+const LoginComponent = () => {
+    const { avatar, } = useUserInfo()
+    const openUserInfo = useAuthAction<MouseEvent<HTMLDivElement>>(event => {
+        console.log(event, '123')
+    })
     return (
-        <div>
-            { userName }
+        <div className="gap-6 items-center flex">
+            <Image className="cursor-pointer" title="好友" src="/people.png" alt="好友" width={ 16 } height={ 16 } />
+            <Image className="cursor-pointer" title="消息" src="/messages.png" alt="消息" width={ 16 } height={ 16 } />
+            <Image className="cursor-pointer" title="通知" src="/notifications.png" alt="通知" width={ 16 } height={ 16 } />
+            <div className="cursor-pointer hidden md:block" onClick={ openUserInfo }>
+                {
+                    avatar ? (
+                        <Image src={ avatar } alt="头像" width={ 32 } height={ 32 } />
+                    ) : (
+                        <div className="rounded-full w-[32px] h-[32px] bg-blue-100"></div>
+                    )
+                }
+            </div>
         </div>
     )
 }
 
 export default function UserInfoNavbar () {
-    const { token, userName } = useUserInfo()
-    return token ? <LoginComponent userName={ userName } /> : <UnLoginComponent />
+    const { token, } = useUserInfo()
+    return <div className="hidden md:block">{ token ? <LoginComponent /> : <UnLoginComponent /> }</div>
 }

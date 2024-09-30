@@ -1,15 +1,34 @@
 'use client'
-import React from 'react'
-import { Input, Checkbox, Button, Form, ConfigProvider } from 'antd'
-import FormItem from 'antd/es/form/FormItem'
 import type { FormProps } from 'antd'
+import { useLoginStatus } from '@/hooks/useLoginStatus'
+import { useUserInfo } from '@/hooks/useUserInfo'
+import { Button, Checkbox, ConfigProvider, Form, Input } from 'antd'
+import FormItem from 'antd/es/form/FormItem'
+
+interface IFormProps extends FormProps {
+    account: string
+    password: string
+}
 
 
-const LoginComponent = ({ close, }: {close: () => void}) => {
-    const [form,] = Form.useForm<FormProps>()
+const LoginComponent = () => {
+    const [form,] = Form.useForm<IFormProps>()
+    const { setUserInfo, } = useUserInfo()
+    const { isOpenLoginModal, closeLoginModal, } = useLoginStatus()
 
     const login = () => {
-        console.log(form.getFieldsValue())
+        const formModel = form.getFieldsValue()
+        // TODO 模拟
+        setUserInfo({
+            userName: formModel.account,
+            token: (Math.random() * 100000000).toString(32),
+            userId: parseInt((Math.random() * 100000000).toString()).toString(),
+        })
+        closeLoginModal()
+    }
+
+    if (!isOpenLoginModal) {
+        return null
     }
 
     return (
@@ -19,7 +38,7 @@ const LoginComponent = ({ close, }: {close: () => void}) => {
                     <div className="flex justify-end p-2">
                         <button type="button"
                                 className="text-gray-400 bg-transparent hover:text-blue-500 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
-                                onClick={ () => close() }>
+                                onClick={ () => closeLoginModal() }>
                             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                 <path fillRule="evenodd"
                                       d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -37,7 +56,7 @@ const LoginComponent = ({ close, }: {close: () => void}) => {
                         }
                         }>
                             <Form form={ form } className="space-y-6 px-6 lg:px-8 pb-4 sm:pb-6 xl:pb-8" layout="vertical" requiredMark={ false } onFinish={ login }>
-                                <h3 className="text-xl font-medium text-gray-900 text-center dark:text-white">Welcome back</h3>
+                                <h3 className="text-xl font-medium text-gray-900 text-center dark:text-white">欢迎回来</h3>
                                 <FormItem label="账号" name="account" rules={ [{ required: true, message: '请输入账号', },] }>
                                     <Input className="h-[38px]" autoFocus={ true } placeholder="请输入账号/邮箱" />
                                 </FormItem>

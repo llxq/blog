@@ -1,12 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-export interface IUserInfo {
+export interface IUserInfoState {
     /* 用户名 */
     userName: string
     /* token */
     token: string
     /* 用户id */
     userId: string
+    /* 头像 */
+    avatar?: string
 }
 
 /**
@@ -15,14 +17,15 @@ export interface IUserInfo {
 const USER_INFO_SLICE = createSlice({
     name: 'userInfo',
     initialState: {
-        userName: '测试用户',
-        token: '123',
-        userId: '1'
-    } as IUserInfo,
+        userName: '测试',
+        token: '12',
+        userId: '1',
+        avatar: '',
+    } as IUserInfoState,
     reducers: {
         /**
          * 设置用户信息
-         * @param state 
+         * @param state
          * @param action
          */
         setUserInfo: (state, action) => {
@@ -30,19 +33,15 @@ const USER_INFO_SLICE = createSlice({
         },
         /**
          * 清空用户信息
-         * @param state 
+         * @param state
          */
-        removeUserInfo: state => {
-            Object.assign(state, {
-                name: '',
-                token: '',
-                userId: ''
-            })
-        }
-    }
+        clearUserInfo: state => {
+            Object.keys(state).forEach(key => Reflect.set(state, key, ''))
+        },
+    },
 })
 
-export const { setUserInfo, removeUserInfo } = USER_INFO_SLICE.actions
+export const { setUserInfo, clearUserInfo, } = USER_INFO_SLICE.actions
 
 export type IUserInfoDispatch = typeof USER_INFO_SLICE.actions
 

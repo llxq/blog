@@ -1,23 +1,23 @@
 import type { IClientDispatch, IClientState } from '@/store/client'
-import { type IUserInfo, removeUserInfo, setUserInfo } from '@/store/client/userInfo'
-import { useDispatch, useSelector, } from 'react-redux'
+import { type IUserInfoState, clearUserInfo, setUserInfo } from '@/store/client/userInfo'
+import { useDispatch, useSelector } from 'react-redux'
 
 export const useUserInfo = () => {
-    const userInfo = useSelector<IClientState, IUserInfo>(state => state.userInfo)
+    const userInfo = useSelector<IClientState, IUserInfoState>(state => state.userInfo)
 
     const dispatch = useDispatch<IClientDispatch>()
 
-    const setUserInfoHandler = (userInfo: Partial<IUserInfo>) => {
+    const setUserInfoHandler = (userInfo: Partial<IUserInfoState>) => {
         dispatch(setUserInfo(userInfo))
     }
 
-    const removeUserInfoHandler = () => {
-        dispatch(removeUserInfo())
+    const clearUserInfoHandler = () => {
+        dispatch(clearUserInfo())
     }
 
     return {
         ...userInfo,
         setUserInfo: setUserInfoHandler,
-        removeUserInfo: removeUserInfoHandler,
+        clearUserInfo: clearUserInfoHandler,
     }
 }

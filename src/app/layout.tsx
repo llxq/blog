@@ -6,7 +6,7 @@ export default function RootLayout ({ children, }: Readonly<{ children: React.Re
     return (
         <html lang="en">
             <body suppressHydrationWarning={ true }>
-                <LayoutProviderWrapper children={ children } />
+                <LayoutProviderWrapper>{ children }</LayoutProviderWrapper>
             </body>
         </html>
     )
