@@ -5,7 +5,7 @@ import { useState } from 'react'
 const MobileMenu = () => {
     const [isOpen, setOpen,] = useState(false)
     return (
-        <div className="mobile-menu__container md:hidden">
+        <div className="md:hidden">
             <div className="flex flex-col gap-[4.5px] cursor-pointer"
                  onClick={ () => setOpen(prevState => !prevState) }>
                 <div className={ `w-6 h-1 bg-blue-500 rounded-sm origin-left ease-in-out duration-500 ${ isOpen ? 'rotate-45' : '' }` }></div>
