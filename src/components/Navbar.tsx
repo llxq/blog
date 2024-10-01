@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
     return (
-        <div className="flex items-center justify-between h-24 navbar__container">
+        <div className="flex items-center justify-between h-16 navbar__container">
             { /* 左边 */ }
             <div className="md:hidden lg:block w-[10%]">
                 <Link href="/" className="font-bold text-blue-600 text-xl">Logo</Link>

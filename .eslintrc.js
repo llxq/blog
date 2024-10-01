@@ -41,6 +41,7 @@ module.exports = {
         /* 控制 JSX 标签的间距，特别是自闭合标签的处理。{ beforeSelfClosing: 'always' } 要求在自闭合标签之前总是添加空格。 */
         'react/jsx-tag-spacing': [2, { beforeSelfClosing: 'always', },],
         '@typescript-eslint/no-explicit-any': 'off',
+        'template-curly-spacing': ['error', 'always',], // 大括号左右必须有间隔
     },
     globals: {
         React: true,
