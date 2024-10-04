@@ -7,7 +7,7 @@ const { TextArea, } = Input
 
 export const Comments = () => {
     return (
-        <div className="">
+        <div className="md:pl-14 md:pr-6">
             <div className="rounded-lg flex gap-4 text-sm justify-between">
                 { /*输入*/ }
                 <Avatar src="https://images.pexels.com/photos/27680935/pexels-photo-27680935.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" className="mt-0.5" />

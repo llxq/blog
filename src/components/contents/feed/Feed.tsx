@@ -11,7 +11,7 @@ export const Feed = () => {
     }))
 
     return (
-        <div className="mt-6 flex flex-col gap-2">
+        <div className="mt-6 flex flex-col bg-white rounded-lg shadow-md">
             {
                 postList.map(m =>  <Post key={ m.name } />)
             }

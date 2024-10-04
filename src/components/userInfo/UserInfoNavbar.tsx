@@ -1,4 +1,4 @@
-import { UserCard } from '@/components/userInfo/UserCard'
+import { UserInfoNavbarCard } from '@/components/userInfo/UserInfoNavbarCard'
 import { useAuthAction } from '@/hooks/useAuthAction'
 import { useUserInfo } from '@/hooks/useUserInfo'
 import Image from 'next/image'
@@ -36,7 +36,7 @@ const LoginComponent = () => {
             <Image className="cursor-pointer" title="好友" src="/people.png" alt="好友" width={ 20 } height={ 20 } />
             <Image className="cursor-pointer" title="消息" src="/messages.png" alt="消息" width={ 16 } height={ 16 } />
             <Image className="cursor-pointer" title="通知" src="/notifications.png" alt="通知" width={ 16 } height={ 16 } />
-            <Popover content={ <UserCard /> } placement="topRight" arrow={ false } trigger="click">
+            <Popover content={ <UserInfoNavbarCard /> } placement="topRight" arrow={ false } trigger="click">
                 <div className="cursor-pointer hidden md:block w-max" onClick={ openUserInfo }>
                     {
                         avatar ? (
