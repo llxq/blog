@@ -1,0 +1,4 @@
+[2024-10-5 15:18:11]: Executing (default): SELECT 1+1 AS result 
+[2024-10-5 15:18:11]: Executing (default): SELECT name FROM blog.user WHERE id = 2 
+[2024-10-5 15:18:32]: Executing (default): SELECT 1+1 AS result 
+[2024-10-5 15:18:32]: Executing (default): SELECT name FROM blog.user WHERE id = 2 

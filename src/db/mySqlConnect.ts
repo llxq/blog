@@ -1,3 +1,4 @@
+import { Logger } from '@/utils/Logger'
 import mysql2 from 'mysql2'
 import { Sequelize } from 'sequelize'
 
@@ -7,9 +8,9 @@ const sequelize = new Sequelize(DB_DATABASE, DB_USER, DB_PASSWORD, {
     host: DB_HOST, // 主机
     dialect: 'mysql', // 指定连接的数据库类型
     port: +DB_PORT, // 端口
-    logging(sql, timing) {
+    logging (sql, timing) {
         if (DB_LOGGING === 'true') {
-            console.log(`[sql日志]: ${ sql } 耗时：${ timing }ms`)
+            Logger.sql(sql, timing)
         }
     },
     pool: { // 连接池配置
@@ -29,9 +30,9 @@ const sequelize = new Sequelize(DB_DATABASE, DB_USER, DB_PASSWORD, {
 export const testConnection = async () => {
     try {
         await sequelize.authenticate()
-        console.log('数据库链接成功')
-    } catch (error) {
-        console.log('数据库链接失败', error)
+        Logger.log('数据库链接成功')
+    } catch (error: any) {
+        Logger.error(`数据库链接失败: ${ typeof error === 'string' ? error : error?.message }`)
     }
 }
 
