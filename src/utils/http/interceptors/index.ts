@@ -1,6 +1,7 @@
+import { responseErrorMessage } from '@/utils/http/interceptors/responseErrorMessage'
+import type { AxiosInstance, AxiosInterceptorOptions, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
 import { requestAuth } from './requestAuth'
 import { responseInterceptor } from './responseInterceptor'
-import type { AxiosInstance, AxiosInterceptorOptions,  InternalAxiosRequestConfig, AxiosResponse } from 'axios'
 
 export interface IInterceptor<T> {
     onFulfilled?: ((_value: T) => T | Promise<T>) | null,
@@ -20,7 +21,7 @@ export const installInterceptors = (axiosInstance: AxiosInstance) => {
     })
 
     /* response 拦截器 */
-    const responseInterceptors: Array<IInterceptor<AxiosResponse>> = [responseInterceptor,]
+    const responseInterceptors: Array<IInterceptor<AxiosResponse>> = [responseErrorMessage, responseInterceptor,]
 
     responseInterceptors.forEach(responseInterceptor => {
         const { onFulfilled, onRejected, options, } = responseInterceptor

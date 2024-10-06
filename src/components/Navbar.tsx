@@ -1,13 +1,17 @@
 'use client'
 import MobileMenu from '@/components/menus/MobileMenu'
 import UserInfoNavbar from '@/components/userInfo/UserInfoNavbar'
-import { Input } from 'antd'
+import { http } from '@/utils'
+import { Button, Input } from 'antd'
 import Image from 'next/image'
 import Link from 'next/link'
 
 const Navbar = () => {
     return (
         <div className="flex items-center justify-between h-16 navbar__container">
+            <Button onClick={ async () => {
+                const { data, code } = await http.post('/api/test')
+            } }>同步</Button>
             { /* 左边 */ }
             <div className="md:hidden lg:block w-[10%]">
                 <Link href="/" className="font-bold text-blue-600 text-xl">Logo</Link>
