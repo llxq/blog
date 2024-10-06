@@ -1,5 +1,5 @@
 'use client'
-import { useLoginStatus } from '@/hooks/useLoginStatus'
+import { useLoginStatus } from '@/lib/hooks/useLoginStatus'
 import Link from 'next/link'
 import { useState } from 'react'
 

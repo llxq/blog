@@ -1,9 +1,9 @@
 import { UserInfoNavbarCard } from '@/components/userInfo/UserInfoNavbarCard'
-import { useAuthAction } from '@/hooks/useAuthAction'
-import { useUserInfo } from '@/hooks/useUserInfo'
+import { useAuthAction } from '@/lib/hooks/useAuthAction'
+import { useUserInfo } from '@/lib/hooks/useUserInfo'
+import { Popover } from 'antd'
 import Image from 'next/image'
 import type { MouseEvent } from 'react'
-import { Popover } from 'antd'
 
 const UnLoginComponent = () => {
     const loginAndRegistry = useAuthAction<MouseEvent<HTMLSpanElement>>(event => {

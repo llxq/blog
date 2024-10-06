@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useScrollStore } from '@/lib/hooks/useScrollStore'
 import Image from 'next/image'
-import { useScrollStore } from '@/hooks/useScrollStore'
+import { useState } from 'react'
 
 export const Stories = () => {
 

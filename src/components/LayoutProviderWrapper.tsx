@@ -1,7 +1,7 @@
 'use client'
 import LoginComponent from '@/components/LoginComponent'
 import Navbar from '@/components/Navbar'
-import { clientStore } from '@/store/client'
+import { clientStore } from '@/lib/store/client'
 import { AntdRegistry } from '@ant-design/nextjs-registry'
 import React from 'react'
 import { Provider } from 'react-redux'

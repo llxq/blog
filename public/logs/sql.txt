@@ -457,3 +457,16 @@
 [2024-10-6 22:27:59]: Executing (default): ALTER TABLE `likes` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
 [2024-10-6 22:27:59]: Executing (default): ALTER TABLE `likes` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
 [2024-10-6 22:27:59]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-6 23:31:0]: Executing (default): SELECT 1+1 AS result 
+[2024-10-6 23:31:0]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 23:31:0]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-6 23:31:0]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 23:31:0]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-6 23:31:0]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 23:31:0]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-6 23:31:0]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 23:31:0]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-6 23:31:0]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 23:31:0]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-6 23:31:0]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 23:31:0]: Executing (default): SHOW INDEX FROM `likes` 

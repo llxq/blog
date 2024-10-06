@@ -1,7 +1,7 @@
 'use client'
+import { useLoginStatus } from '@/lib/hooks/useLoginStatus'
+import { useUserInfo } from '@/lib/hooks/useUserInfo'
 import type { FormProps } from 'antd'
-import { useLoginStatus } from '@/hooks/useLoginStatus'
-import { useUserInfo } from '@/hooks/useUserInfo'
 import { Button, Checkbox, ConfigProvider, Form, Input } from 'antd'
 import FormItem from 'antd/es/form/FormItem'
 

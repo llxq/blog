@@ -1,6 +1,6 @@
-import { syncDb } from '@/db/sync'
-import { sendResponseJson } from '@/utils/clientResponse'
-import { isDev } from '@/utils/env'
+import { syncDb } from '@/lib/db/sync'
+import { sendResponseJson } from '@/lib/utils/clientResponse'
+import { isDev } from '@/lib/utils/env'
 
 /**
  * 用于测试环境同步数据库
