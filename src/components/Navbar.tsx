@@ -1,23 +1,15 @@
 'use client'
 import MobileMenu from '@/components/menus/MobileMenu'
 import UserInfoNavbar from '@/components/userInfo/UserInfoNavbar'
-import { http } from '@/utils'
 import { Input } from 'antd'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
 
 const Navbar = () => {
-    const [name, setName,] = useState()
     return (
         <div className="flex items-center justify-between h-16 navbar__container">
-            这是查询的name：{ name }
             { /* 左边 */ }
             <div className="md:hidden lg:block w-[10%]">
-                <button onClick={ async () => {
-                    const { data: { data: [{ name: userName, },], }, } = await http.post('/api/users/test', { id: 2, })
-                    setName(() => userName)
-                } }>链接数据库</button>
                 <Link href="/" className="font-bold text-blue-600 text-xl">Logo</Link>
             </div>
             { /* 中间 */ }

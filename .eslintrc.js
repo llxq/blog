@@ -42,6 +42,8 @@ module.exports = {
         'react/jsx-tag-spacing': [2, { beforeSelfClosing: 'always', },],
         '@typescript-eslint/no-explicit-any': 'off',
         'template-curly-spacing': ['error', 'always',], // 大括号左右必须有间隔
+        'no-unused-vars': 0,
+        '@typescript-eslint/no-unused-vars': 0,
     },
     globals: {
         React: true,

@@ -1,4 +1,56 @@
-[2024-10-5 15:18:11]: Executing (default): SELECT 1+1 AS result 
-[2024-10-5 15:18:11]: Executing (default): SELECT name FROM blog.user WHERE id = 2 
-[2024-10-5 15:18:32]: Executing (default): SELECT 1+1 AS result 
-[2024-10-5 15:18:32]: Executing (default): SELECT name FROM blog.user WHERE id = 2 
+[2024-10-6 16:42:4]: Executing (default): SELECT 1+1 AS result 
+[2024-10-6 16:42:4]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:42:4]: Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` VARCHAR(255) NOT NULL , `username` VARCHAR(255) NOT NULL UNIQUE, `avatar` VARCHAR(255), `cover` VARCHAR(255), `name` VARCHAR(255), `surname` VARCHAR(255), `description` VARCHAR(255), `city` VARCHAR(255), `school` VARCHAR(255), `work` VARCHAR(255), `website` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB; 
+[2024-10-6 16:42:4]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-6 16:42:4]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:42:4]: Executing (default): CREATE TABLE IF NOT EXISTS `follow_requests` (`id` INET auto_increment , `userId` VARCHAR(255) NOT NULL, `expiresAt` DATETIME NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+[2024-10-6 16:47:27]: Executing (default): SELECT 1+1 AS result 
+[2024-10-6 16:47:27]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:47:27]: Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` VARCHAR(255) NOT NULL , `username` VARCHAR(255) NOT NULL UNIQUE, `avatar` VARCHAR(255), `cover` VARCHAR(255), `name` VARCHAR(255), `surname` VARCHAR(255), `description` VARCHAR(255), `city` VARCHAR(255), `school` VARCHAR(255), `work` VARCHAR(255), `website` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB; 
+[2024-10-6 16:47:28]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-6 16:47:28]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:47:28]: Executing (default): CREATE TABLE IF NOT EXISTS `follow_requests` (`id` INTEGER auto_increment , `userId` VARCHAR(255) NOT NULL, `expiresAt` DATETIME NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+[2024-10-6 16:47:29]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-6 16:47:29]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:47:29]: Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER auto_increment , `desc` VARCHAR(255), `userId` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+[2024-10-6 16:47:29]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-6 16:47:29]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:47:29]: Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER auto_increment , `desc` VARCHAR(255), `userId` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, `postId` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`postId`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+[2024-10-6 16:47:29]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-6 16:47:29]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:47:29]: Executing (default): CREATE TABLE IF NOT EXISTS `followers` (`id` INTEGER auto_increment , `followerId` VARCHAR(255) NOT NULL, `followingId` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, UNIQUE `followers_followerId_followingId_unique` (`followerId`, `followingId`), PRIMARY KEY (`id`), FOREIGN KEY (`followerId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`followingId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+[2024-10-6 16:47:29]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-6 16:47:29]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:47:29]: Executing (default): CREATE TABLE IF NOT EXISTS `likes` (`id` INTEGER auto_increment , `userId` VARCHAR(255) NOT NULL, `postId` INTEGER NOT NULL, `commentId` INTEGER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`postId`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`commentId`) REFERENCES `comments` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+[2024-10-6 16:47:29]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-6 16:51:19]: Executing (default): SELECT 1+1 AS result 
+[2024-10-6 16:51:19]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:51:19]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-6 16:51:19]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:51:19]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-6 16:51:19]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:51:19]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-6 16:51:19]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:51:19]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-6 16:51:19]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:51:19]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-6 16:51:19]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:51:19]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-6 16:52:48]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:52:48]: Executing (default): CREATE TABLE IF NOT EXISTS `users` (`id` VARCHAR(255) NOT NULL  COMMENT '用户id', `username` VARCHAR(255) NOT NULL UNIQUE COMMENT '用户名', `avatar` VARCHAR(255), `cover` VARCHAR(255), `name` VARCHAR(255), `surname` VARCHAR(255), `description` VARCHAR(255), `city` VARCHAR(255), `school` VARCHAR(255), `work` VARCHAR(255), `website` VARCHAR(255), `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB; 
+[2024-10-6 16:52:48]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-6 16:52:48]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:52:48]: Executing (default): CREATE TABLE IF NOT EXISTS `follow_requests` (`id` INTEGER auto_increment , `userId` VARCHAR(255) NOT NULL, `expiresAt` DATETIME NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+[2024-10-6 16:52:48]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-6 16:52:48]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:52:48]: Executing (default): CREATE TABLE IF NOT EXISTS `posts` (`id` INTEGER auto_increment , `desc` VARCHAR(255), `userId` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+[2024-10-6 16:52:48]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-6 16:52:48]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:52:48]: Executing (default): CREATE TABLE IF NOT EXISTS `comments` (`id` INTEGER auto_increment , `desc` VARCHAR(255), `userId` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, `postId` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`postId`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+[2024-10-6 16:52:48]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-6 16:52:48]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:52:48]: Executing (default): CREATE TABLE IF NOT EXISTS `followers` (`id` INTEGER auto_increment , `followerId` VARCHAR(255) NOT NULL, `followingId` VARCHAR(255) NOT NULL, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, UNIQUE `followers_followerId_followingId_unique` (`followerId`, `followingId`), PRIMARY KEY (`id`), FOREIGN KEY (`followerId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`followingId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+[2024-10-6 16:52:48]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-6 16:52:48]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-6 16:52:48]: Executing (default): CREATE TABLE IF NOT EXISTS `likes` (`id` INTEGER auto_increment , `userId` VARCHAR(255) NOT NULL, `postId` INTEGER NOT NULL, `commentId` INTEGER, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`), FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`postId`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`commentId`) REFERENCES `comments` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB; 
+[2024-10-6 16:52:48]: Executing (default): SHOW INDEX FROM `likes` 

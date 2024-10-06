@@ -1,6 +1,6 @@
 import { DB_CONFIG } from '@/db/config'
 import { Logger } from '@/utils/Logger'
-import { Sequelize } from 'sequelize'
+import { DataType, InitOptions, Model, ModelAttributeColumnOptions, Sequelize, type ModelStatic } from 'sequelize'
 
 const { username, password, database, options, } = DB_CONFIG
 
@@ -26,4 +26,18 @@ testConnection()
  */
 export const closeConnection = async () => {
     await db.close()
+}
+
+/**
+ * 初始化model
+ * @param model 
+ * @param attributes 
+ * @param options 
+ */
+/* eslint-disable no-unused-vars */
+export const initModel = <M extends Model> (model: ModelStatic<Model>, attributes: {
+    [P in keyof M]?: DataType | ModelAttributeColumnOptions<M>
+}, options?: Partial<InitOptions>) => {
+    console.log(model, 'asdfasdfa')
+    model.init(attributes as any, Object.assign({}, options ?? {}, { sequelize: db, }))
 }
