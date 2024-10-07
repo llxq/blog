@@ -1,20 +1,22 @@
 import { InjectModel } from '@/lib/db/utils'
 import { DataTypes, Model, Optional } from 'sequelize'
 
-interface IUser {
+export interface IUser {
     // user id
     id: string
     username: string
+    email?: string
+    password: string
     // 头像
-    avatar: string
-    cover: string
-    name: string
-    surname: string
-    description: string
-    city: string
-    school: string
-    work: string
-    website: string
+    avatar?: string
+    cover?: string
+    name?: string
+    surname?: string
+    description?: string
+    city?: string
+    school?: string
+    work?: string
+    website?: string
 }
 
 @InjectModel<User>({
@@ -29,6 +31,16 @@ interface IUser {
         allowNull: false,
         unique: true,
         comment: '用户名',
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        comment: '密码',
+    },
+    email: {
+        type: DataTypes.STRING,
+        unique: true,
+        comment: '邮箱'
     },
     avatar: DataTypes.STRING,
     cover: DataTypes.STRING,
@@ -45,13 +57,15 @@ interface IUser {
 export class User extends Model<IUser, Optional<IUser, 'id'>> implements IUser {
     public id!: string
     public username!: string
-    public avatar!: string
-    public cover!: string
-    public name!: string
-    public surname!: string
-    public description!: string
-    public city!: string
-    public school!: string
-    public work!: string
-    public website!: string
+    public password!: string
+    public email?: string
+    public avatar?: string
+    public cover?: string
+    public name?: string
+    public surname?: string
+    public description?: string
+    public city?: string
+    public school?: string
+    public work?: string
+    public website?: string
 }

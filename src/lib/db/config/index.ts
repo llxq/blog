@@ -1,4 +1,4 @@
-import { Logger } from '@/lib/utils/Logger'
+import { Logger } from '@/lib/utils/server'
 import mysql2 from 'mysql2'
 import type { Options } from 'sequelize/types/index'
 

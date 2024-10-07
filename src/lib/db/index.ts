@@ -1,5 +1,5 @@
 import { DB_CONFIG } from '@/lib/db/config'
-import { Logger } from '@/lib/utils/Logger'
+import { Logger } from '@/lib/utils/server'
 import { DataType, InitOptions, Model, ModelAttributeColumnOptions, Sequelize, type ModelStatic } from 'sequelize'
 
 const { username, password, database, options, } = DB_CONFIG
@@ -38,6 +38,5 @@ export const closeConnection = async () => {
 export const initModel = <M extends Model> (model: ModelStatic<Model>, attributes: {
     [P in keyof M]?: DataType | ModelAttributeColumnOptions<M>
 }, options?: Partial<InitOptions>) => {
-    console.log(model, 'asdfasdfa')
     model.init(attributes as any, Object.assign({}, options ?? {}, { sequelize: db, }))
 }

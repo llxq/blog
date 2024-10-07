@@ -1,7 +1,9 @@
+import { whiteApis } from '@/lib/configs/whiteAips'
 import { clientStore } from '@/lib/store/client'
+import { logOut } from '@/lib/utils/client'
 import type { IInterceptor } from '@/lib/utils/http/interceptors/index'
-import { logOut } from '@/lib/utils/logOut'
 import type { InternalAxiosRequestConfig } from 'axios'
+
 
 export const requestAuth: IInterceptor<InternalAxiosRequestConfig> = {
     onFulfilled: (config: InternalAxiosRequestConfig) => {
@@ -9,7 +11,9 @@ export const requestAuth: IInterceptor<InternalAxiosRequestConfig> = {
         if (token) {
             config.headers.Authorization = `Bearer ${ token }`
         } else {
-            logOut()
+            if (!config.url || !whiteApis.includes(config.url)) {
+                logOut()
+            }
         }
         return config
     },

@@ -1,3 +1,4 @@
+import { logOut } from '@/lib/utils/client'
 import type { AxiosResponse } from 'axios'
 import type { IInterceptor } from '../interceptors/index'
 
@@ -9,6 +10,7 @@ export const responseInterceptor: IInterceptor<AxiosResponse> = {
             code: code || response.status,
         }
         if (code === 401) {
+            logOut()
             return Promise.reject(responseData)
         }
         return responseData

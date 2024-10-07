@@ -17,9 +17,9 @@ export interface IUserInfoState {
 const USER_INFO_SLICE = createSlice({
     name: 'userInfo',
     initialState: {
-        userName: '测试',
-        token: '12',
-        userId: '1',
+        userName: '',
+        token: '',
+        userId: '',
         avatar: '',
     } as IUserInfoState,
     reducers: {

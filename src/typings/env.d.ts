@@ -20,6 +20,20 @@ declare namespace NodeJS {
         DB_POLL_ACQUIRE: string
         // poll idle
         DB_POLL_IDLE: string
+
+        // redis
+        // redis-host
+        REDIS_HOST: string
+        // redis-port
+        REDIS_PORT: string
+        // redis-password
+        REDIS_PASSWORD: string
+
+        // jwt secret
+        JWT_SECRET: string
+
+        // rsa private key
+        RSA_PUBLIC_KEY: string
     }
   }
   

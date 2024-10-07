@@ -470,3 +470,288 @@
 [2024-10-6 23:31:0]: Executing (default): SHOW INDEX FROM `followers` 
 [2024-10-6 23:31:0]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
 [2024-10-6 23:31:0]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 12:20:5]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 12:20:5]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:5]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-7 12:20:5]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:5]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-7 12:20:5]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:5]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-7 12:20:5]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:5]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-7 12:20:5]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:5]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-7 12:20:5]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:5]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 12:20:10]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:10]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-7 12:20:10]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:10]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-7 12:20:10]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:10]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-7 12:20:10]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:10]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-7 12:20:10]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:10]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-7 12:20:10]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:10]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 12:20:26]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:26]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-7 12:20:26]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:26]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-7 12:20:26]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:26]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-7 12:20:26]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:26]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-7 12:20:26]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:26]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-7 12:20:26]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:20:26]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 12:21:15]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:21:15]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-7 12:21:15]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:21:15]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-7 12:21:15]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:21:15]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-7 12:21:15]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:21:15]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-7 12:21:15]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:21:15]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-7 12:21:15]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:21:15]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 12:35:33]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 12:35:33]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:35:33]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-7 12:35:33]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:35:33]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-7 12:35:33]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:35:33]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-7 12:35:33]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:35:33]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-7 12:35:33]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:35:33]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-7 12:35:33]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:35:33]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 12:36:52]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 12:36:52]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:36:52]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-7 12:36:52]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:36:52]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-7 12:36:52]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:36:52]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-7 12:36:52]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:36:52]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-7 12:36:52]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:36:52]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-7 12:36:52]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:36:52]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 12:50:58]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 12:50:58]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-7 12:50:58]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:50:58]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:50:58]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-7 12:50:58]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:50:58]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-7 12:50:58]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:50:58]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-7 12:50:58]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:50:58]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-7 12:50:58]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:50:58]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 12:54:21]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:21]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-7 12:54:21]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:21]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-7 12:54:21]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:21]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-7 12:54:21]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:21]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-7 12:54:21]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:21]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-7 12:54:21]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:21]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 12:54:35]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:35]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-7 12:54:35]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:35]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-7 12:54:35]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:35]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-7 12:54:35]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:35]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-7 12:54:35]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:35]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-7 12:54:35]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 12:54:35]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 14:31:43]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 14:34:53]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 14:35:36]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 14:36:35]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 14:36:35]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?); 
+[2024-10-7 14:55:5]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 14:55:5]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?); 
+[2024-10-7 14:57:10]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 14:57:10]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:10]: Executing (default): SHOW FULL COLUMNS FROM `users`; 
+[2024-10-7 14:57:10]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'users' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` ADD `password` VARCHAR(255) NOT NULL COMMENT '密码'; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` ADD `email` VARCHAR(255) UNIQUE COMMENT '邮箱'; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `username` `username` VARCHAR(255) NOT NULL UNIQUE COMMENT '用户名'; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `avatar` `avatar` VARCHAR(255); 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `cover` `cover` VARCHAR(255); 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `name` `name` VARCHAR(255); 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `surname` `surname` VARCHAR(255); 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `description` `description` VARCHAR(255); 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `city` `city` VARCHAR(255); 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `school` `school` VARCHAR(255); 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `work` `work` VARCHAR(255); 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `website` `website` VARCHAR(255); 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `users` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:10]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-7 14:57:10]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:10]: Executing (default): SHOW FULL COLUMNS FROM `follow_requests`; 
+[2024-10-7 14:57:10]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'follow_requests' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:10]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='follow_requests' AND constraint_name = 'follow_requests_ibfk_1' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `follow_requests` DROP FOREIGN KEY `follow_requests_ibfk_1`; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `follow_requests` ADD FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `follow_requests` CHANGE `expiresAt` `expiresAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `follow_requests` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `follow_requests` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:10]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-7 14:57:10]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:10]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:10]: Executing (default): SHOW FULL COLUMNS FROM `posts`; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `posts` CHANGE `desc` `desc` VARCHAR(255); 
+[2024-10-7 14:57:10]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='posts' AND constraint_name = 'posts_ibfk_1' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `posts` DROP FOREIGN KEY `posts_ibfk_1`; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `posts` ADD FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `posts` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `posts` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `posts` CHANGE `img` `img` VARCHAR(255) COMMENT '图片地址，多个以逗号隔开'; 
+[2024-10-7 14:57:10]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-7 14:57:10]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:10]: Executing (default): SHOW FULL COLUMNS FROM `comments`; 
+[2024-10-7 14:57:10]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'comments' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:10]: Executing (default): ALTER TABLE `comments` CHANGE `desc` `desc` VARCHAR(255); 
+[2024-10-7 14:57:10]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='comments' AND constraint_name = 'comments_ibfk_11' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `comments` DROP FOREIGN KEY `comments_ibfk_11`; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `comments` ADD FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `comments` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `comments` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:11]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='comments' AND constraint_name = 'comments_ibfk_12' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `comments` DROP FOREIGN KEY `comments_ibfk_12`; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `comments` ADD FOREIGN KEY (`postId`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:11]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-7 14:57:11]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:11]: Executing (default): SHOW FULL COLUMNS FROM `followers`; 
+[2024-10-7 14:57:11]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'followers' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:11]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='followers' AND constraint_name = 'followers_ibfk_1' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `followers` DROP FOREIGN KEY `followers_ibfk_1`; 
+[2024-10-7 14:57:11]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='followers' AND constraint_name = 'followers_ibfk_2' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `followers` DROP FOREIGN KEY `followers_ibfk_2`; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `followers` ADD FOREIGN KEY (`followerId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `followers` ADD FOREIGN KEY (`followingId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `followers` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `followers` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:11]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-7 14:57:11]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:11]: Executing (default): SHOW FULL COLUMNS FROM `likes`; 
+[2024-10-7 14:57:11]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'likes' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:11]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='likes' AND constraint_name = 'likes_ibfk_16' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `likes` DROP FOREIGN KEY `likes_ibfk_16`; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `likes` ADD FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:11]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='likes' AND constraint_name = 'likes_ibfk_17' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `likes` DROP FOREIGN KEY `likes_ibfk_17`; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `likes` ADD FOREIGN KEY (`postId`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:11]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='likes' AND constraint_name = 'likes_ibfk_18' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `likes` DROP FOREIGN KEY `likes_ibfk_18`; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `likes` ADD FOREIGN KEY (`commentId`) REFERENCES `comments` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `likes` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:11]: Executing (default): ALTER TABLE `likes` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:11]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 14:57:28]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'users' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:28]: Executing (default): SHOW FULL COLUMNS FROM `users`; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'users' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `username` `username` VARCHAR(255) NOT NULL UNIQUE COMMENT '用户名'; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `avatar` `avatar` VARCHAR(255); 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `cover` `cover` VARCHAR(255); 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `name` `name` VARCHAR(255); 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `surname` `surname` VARCHAR(255); 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `description` `description` VARCHAR(255); 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `city` `city` VARCHAR(255); 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `school` `school` VARCHAR(255); 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `work` `work` VARCHAR(255); 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `website` `website` VARCHAR(255); 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `password` `password` VARCHAR(255) NOT NULL COMMENT '密码'; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `users` CHANGE `email` `email` VARCHAR(255) UNIQUE COMMENT '邮箱'; 
+[2024-10-7 14:57:28]: Executing (default): SHOW INDEX FROM `users` 
+[2024-10-7 14:57:28]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'follow_requests' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:28]: Executing (default): SHOW FULL COLUMNS FROM `follow_requests`; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'follow_requests' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='follow_requests' AND constraint_name = 'follow_requests_ibfk_1' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `follow_requests` DROP FOREIGN KEY `follow_requests_ibfk_1`; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `follow_requests` ADD FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `follow_requests` CHANGE `expiresAt` `expiresAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `follow_requests` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `follow_requests` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): SHOW INDEX FROM `follow_requests` 
+[2024-10-7 14:57:28]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'posts' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:28]: Executing (default): SHOW FULL COLUMNS FROM `posts`; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `posts` CHANGE `desc` `desc` VARCHAR(255); 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='posts' AND constraint_name = 'posts_ibfk_1' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `posts` DROP FOREIGN KEY `posts_ibfk_1`; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `posts` ADD FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `posts` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `posts` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `posts` CHANGE `img` `img` VARCHAR(255) COMMENT '图片地址，多个以逗号隔开'; 
+[2024-10-7 14:57:28]: Executing (default): SHOW INDEX FROM `posts` 
+[2024-10-7 14:57:28]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'comments' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:28]: Executing (default): SHOW FULL COLUMNS FROM `comments`; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'comments' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `comments` CHANGE `desc` `desc` VARCHAR(255); 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='comments' AND constraint_name = 'comments_ibfk_13' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `comments` DROP FOREIGN KEY `comments_ibfk_13`; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `comments` ADD FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `comments` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `comments` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='comments' AND constraint_name = 'comments_ibfk_14' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `comments` DROP FOREIGN KEY `comments_ibfk_14`; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `comments` ADD FOREIGN KEY (`postId`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:28]: Executing (default): SHOW INDEX FROM `comments` 
+[2024-10-7 14:57:28]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'followers' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:28]: Executing (default): SHOW FULL COLUMNS FROM `followers`; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'followers' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='followers' AND constraint_name = 'followers_ibfk_1' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `followers` DROP FOREIGN KEY `followers_ibfk_1`; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='followers' AND constraint_name = 'followers_ibfk_2' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `followers` DROP FOREIGN KEY `followers_ibfk_2`; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `followers` ADD FOREIGN KEY (`followerId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `followers` ADD FOREIGN KEY (`followingId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `followers` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `followers` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): SHOW INDEX FROM `followers` 
+[2024-10-7 14:57:28]: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'likes' AND TABLE_SCHEMA = 'blog' 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'likes' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='blog' AND REFERENCED_TABLE_NAME IS NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): SHOW FULL COLUMNS FROM `likes`; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='likes' AND constraint_name = 'likes_ibfk_19' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `likes` DROP FOREIGN KEY `likes_ibfk_19`; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `likes` ADD FOREIGN KEY (`userId`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='likes' AND constraint_name = 'likes_ibfk_20' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `likes` DROP FOREIGN KEY `likes_ibfk_20`; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `likes` ADD FOREIGN KEY (`postId`) REFERENCES `posts` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:28]: Executing (default): SELECT CONSTRAINT_CATALOG AS constraintCatalog, CONSTRAINT_NAME AS constraintName, CONSTRAINT_SCHEMA AS constraintSchema, CONSTRAINT_TYPE AS constraintType, TABLE_NAME AS tableName, TABLE_SCHEMA AS tableSchema from INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE table_name='likes' AND constraint_name = 'likes_ibfk_21' AND TABLE_SCHEMA = 'blog'; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `likes` DROP FOREIGN KEY `likes_ibfk_21`; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `likes` ADD FOREIGN KEY (`commentId`) REFERENCES `comments` (`id`) ON DELETE CASCADE ON UPDATE CASCADE; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `likes` CHANGE `createdAt` `createdAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): ALTER TABLE `likes` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL; 
+[2024-10-7 14:57:28]: Executing (default): SHOW INDEX FROM `likes` 
+[2024-10-7 14:57:29]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 14:57:29]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?); 
+[2024-10-7 15:3:15]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 15:3:15]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?); 
+[2024-10-7 16:13:0]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 16:14:12]: Executing (default): SELECT 1+1 AS result 
+[2024-10-7 16:17:43]: Executing (default): SELECT 1+1 AS result 

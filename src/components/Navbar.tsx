@@ -1,7 +1,7 @@
 'use client'
 import MobileMenu from '@/components/menus/MobileMenu'
 import UserInfoNavbar from '@/components/userInfo/UserInfoNavbar'
-import { http } from '@/lib/utils'
+import { http } from '@/lib/utils/client'
 import { Button, Input } from 'antd'
 import Image from 'next/image'
 import Link from 'next/link'
