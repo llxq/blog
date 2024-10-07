@@ -1,9 +1,9 @@
-import NodeRSA from 'node-rsa'
+import { JSEncrypt } from 'jsencrypt'
 
-const key = new NodeRSA({ b: 2048 }) // 生成一个2048位的RSA密钥对
-const publicKey = key.exportKey('public')
-const privateKey = key.exportKey('private')
+const encrypt = new JSEncrypt()
 
+const privateKey = encrypt.getPrivateKey()
+const publicKey = encrypt.getPublicKey()
 
 export const getDecryptKey = () => {
     return {
@@ -13,11 +13,8 @@ export const getDecryptKey = () => {
 }
 
 export const rsaDecrypt = (data: string) => {
-    try {
-        const decryptedValue = key.decrypt(data, 'base64');
-        console.log(decryptedValue, '解密后的数据')
-        return decryptedValue
-    } catch (error) {
-        console.log(error)
-    }
+    const decrypt = new JSEncrypt()
+    decrypt.setPrivateKey(privateKey)
+    const decrypted = decrypt.decrypt(data)
+    return decrypted
 }

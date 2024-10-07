@@ -38,9 +38,6 @@ importers:
       next:
         specifier: 14.2.13
         version: 14.2.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(sass@1.79.3)
-      node-rsa:
-        specifier: ^1.1.1
-        version: 1.1.1
       react:
         specifier: ^18
         version: 18.3.1
@@ -63,9 +60,6 @@ importers:
       '@types/node':
         specifier: ^20
         version: 20.16.9
-      '@types/node-rsa':
-        specifier: ^1.1.4
-        version: 1.1.4
       '@types/react':
         specifier: ^18
         version: 18.3.9
@@ -403,9 +397,6 @@ packages:
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
 
-  '@types/node-rsa@1.1.4':
-    resolution: {integrity: sha512-dB0ECel6JpMnq5ULvpUTunx3yNm8e/dIkv8Zu9p2c8me70xIRUUG3q+qXRwcSf9rN3oqamv4116iHy90dJGRpA==}
-
   '@types/node@20.16.9':
     resolution: {integrity: sha512-rkvIVJxsOfBejxK7I0FO5sa2WxFmJCzoDwcd88+fq/CUfynNywTo/1/T6hyFz22CyztsnLS9nVlHOnTI36RH5w==}
 
@@ -576,9 +567,6 @@ packages:
   arraybuffer.prototype.slice@1.0.3:
     resolution: {integrity: sha512-bMxMKAjg13EBSVscxTaYA4mRc5t1UAXa2kXiGTNfZ079HIWXEkKmkgFrh/nJqamaLSrXO5H4WFFkPEaLJWbs3A==}
     engines: {node: '>= 0.4'}
-
-  asn1@0.2.6:
-    resolution: {integrity: sha512-ix/FxPn0MDjeyJ7i/yoHGFt/EX6LyNbxSEhPPXODPL+KB0VPk86UYfL0lMdy+KCnv+fmvIzySwaK5COwqVbWTQ==}
 
   ast-types-flow@0.0.8:
     resolution: {integrity: sha512-OH/2E5Fg20h2aPrbe+QL8JZQFko0YZaF+j4mnQ7BGhfavO7OpSLa8a0y9sBwomHdSbkhTS8TQNayBfnW5DwbvQ==}
@@ -1474,9 +1462,6 @@ packages:
         optional: true
       sass:
         optional: true
-
-  node-rsa@1.1.1:
-    resolution: {integrity: sha512-Jd4cvbJMryN21r5HgxQOpMEqv+ooke/korixNNK3mGqfGJmy0M77WDDzo/05969+OkMy3XW1UuZsSmW9KQm7Fw==}
 
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -2643,10 +2628,6 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node-rsa@1.1.4':
-    dependencies:
-      '@types/node': 20.16.9
-
   '@types/node@20.16.9':
     dependencies:
       undici-types: 6.19.8
@@ -2919,10 +2900,6 @@ snapshots:
       get-intrinsic: 1.2.4
       is-array-buffer: 3.0.4
       is-shared-array-buffer: 1.0.3
-
-  asn1@0.2.6:
-    dependencies:
-      safer-buffer: 2.1.2
 
   ast-types-flow@0.0.8: {}
 
@@ -3992,10 +3969,6 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
-
-  node-rsa@1.1.1:
-    dependencies:
-      asn1: 0.2.6
 
   normalize-path@3.0.0: {}
 
