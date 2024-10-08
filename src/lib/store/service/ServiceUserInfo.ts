@@ -27,7 +27,7 @@ class ServiceUserInfo {
     }
 
     public async set (token: string, userInfo: IServiceUserInfo) {
-        const { userId } = userInfo
+        const { userId, } = userInfo
         RedisInstance.set(userId, token)
         return RedisInstance.set(token, JSON.stringify(userInfo))
     }

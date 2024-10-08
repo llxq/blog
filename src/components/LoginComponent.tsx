@@ -2,26 +2,37 @@
 import { useLoginStatus } from '@/lib/hooks/useLoginStatus'
 import { useUserInfo } from '@/lib/hooks/useUserInfo'
 import { http, rsaEncrypt } from '@/lib/utils/client'
-import type { FormProps } from 'antd'
-import { Button, Checkbox, ConfigProvider, Form, Input } from 'antd'
+import { Button, Checkbox, ConfigProvider, Form, Input, message, type FormProps } from 'antd'
 import FormItem from 'antd/es/form/FormItem'
+import Link from 'next/link'
+import { useState } from 'react'
 
 interface IFormProps extends FormProps {
     account: string
     password: string
 }
 
+const { Password, } = Input
 
 const LoginComponent = () => {
     const [form,] = Form.useForm<IFormProps>()
     const { setUserInfo, } = useUserInfo()
     const { isOpenLoginModal, closeLoginModal, } = useLoginStatus()
+    const [ loading, setLoading, ] = useState(false)
 
     const login = async () => {
-        const formModel = form.getFieldsValue()
-        const password = await rsaEncrypt(formModel.password)
-        await http.post('/api/auth/login', { account: formModel.account, password })
-        closeLoginModal()
+        setLoading(true)
+        try {
+            const formModel = form.getFieldsValue()
+            const password = await rsaEncrypt(formModel.password)
+            const { data, } = await http.post('/api/auth/login', { account: formModel.account, password, })
+            message.success('登录成功')
+            // 初始化登录信息
+            setUserInfo(data)
+            closeLoginModal()
+        } finally {
+            setLoading(false)
+        }
     }
 
     if (!isOpenLoginModal) {
@@ -59,7 +70,7 @@ const LoginComponent = () => {
                                 </FormItem>
                                 <FormItem label="密码"
                                           name="password" rules={ [{ required: true, message: '请输入密码', },] }>
-                                    <Input type="password" placeholder="请输入密码" className="h-[38px]" />
+                                    <Password placeholder="请输入密码" className="h-[38px]" />
                                 </FormItem>
                                 <div className="flex justify-between">
                                     <div className="flex items-start">
@@ -69,10 +80,10 @@ const LoginComponent = () => {
                                     </div>
                                     <a href="#" className="text-sm text-blue-600 hover:underline dark:text-blue-500">忘记密码？</a>
                                 </div>
-                                <Button htmlType="submit" type="primary" size="large" className="w-full font-bold ">登录
+                                <Button loading={ loading } htmlType="submit" type="primary" size="large" className="w-full font-bold ">登录
                                 </Button>
                                 <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-                                    现在注册? <a href="#" className="text-blue-700 hover:underline dark:text-blue-500 pl-1">创建账号</a>
+                                    现在注册? <Link href="/register" className="text-blue-700 hover:underline dark:text-blue-500 pl-1">创建账号</Link>
                                 </div>
                             </Form>
                         </ConfigProvider>

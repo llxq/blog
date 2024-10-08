@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 export interface IUserInfoState {
     /* 用户名 */
-    userName: string
+    username: string
     /* token */
     token: string
     /* 用户id */
@@ -17,7 +17,7 @@ export interface IUserInfoState {
 const USER_INFO_SLICE = createSlice({
     name: 'userInfo',
     initialState: {
-        userName: '',
+        username: '',
         token: '',
         userId: '',
         avatar: '',

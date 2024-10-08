@@ -4,7 +4,7 @@ import type { IInterceptor } from '../interceptors/index'
 
 export const responseErrorMessage: IInterceptor<AxiosResponse> = {
     onFulfilled: (response) => {
-        const { code, message: responseMessage } = response.data
+        const { code, message: responseMessage, } = response.data
         if (code !== 200) {
             message.error(responseMessage || '未知错误')
         }

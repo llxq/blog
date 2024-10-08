@@ -7,7 +7,7 @@ import { NextRequest } from 'next/server'
  * @returns token
  */
 export const generateToken = (userId: string) => {
-    return jwt.sign(userId, process.env.JWT_SECRET_KEY, { expiresIn: '2h' })
+    return jwt.sign(userId, process.env.JWT_SECRET_KEY, { expiresIn: '2h', })
 }
 
 export const authenticateToken = (token: string) => {
@@ -17,7 +17,7 @@ export const authenticateToken = (token: string) => {
 /**
  * directives to auth
  */
-export const Auth = <T extends Function>(originFunction: T) => {
+export const Auth = <T extends (...args: any) => any>(originFunction: T) => {
     return function (this: any, res: NextRequest, ...args: any) {
         const token = res.headers.get('Authorization')
         if (token) {
@@ -25,6 +25,6 @@ export const Auth = <T extends Function>(originFunction: T) => {
         } else {
             // return sendResponseJson(false, '未登录', 401)
         }
-        return originFunction.apply(this, [res, ...args])
+        return originFunction.apply(this, [res, ...args,])
     }
 }

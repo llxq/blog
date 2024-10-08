@@ -8,7 +8,7 @@ import JSEncrypt from 'jsencrypt'
  */
 export const rsaEncrypt = async (data: string) => {
     const encrypt = new JSEncrypt()
-    const { data: publicKey } = await http.get('/api/public/rsa')
+    const { data: publicKey, } = await http.get('/api/public/rsa')
     encrypt.setPublicKey(publicKey)
     return encrypt.encrypt(data)
 }

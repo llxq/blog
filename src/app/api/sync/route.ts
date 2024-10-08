@@ -13,7 +13,7 @@ export async function POST () {
     try {
         await syncDb()
     } catch (error: any) {
-        return sendResponseJson(false, typeof error === 'string' ? error : error?.message, 500)
+        return sendResponseJson(false, error, 500)
     }
     return sendResponseJson(true, '数据库同步成功')
 }
