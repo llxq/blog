@@ -22,7 +22,7 @@ interface IStory {
         allowNull: false,
     },
 }, {
-    tableName: 'follow_requests',
+    tableName: 'stories',
 })
 export class Story extends Model<IStory, Optional<IStory, 'id'>> implements IStory {
     public id!: number

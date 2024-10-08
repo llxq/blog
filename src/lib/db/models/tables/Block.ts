@@ -25,7 +25,7 @@ interface IBlock {
         unique: true,
     },
 }, {
-    tableName: 'follow_requests',
+    tableName: 'blocks',
 })
 export class Block extends Model<IBlock, Optional<IBlock, 'id'>> implements IBlock {
     public id!: number

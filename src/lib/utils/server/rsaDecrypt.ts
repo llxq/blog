@@ -1,20 +1,15 @@
 import { JSEncrypt } from 'jsencrypt'
 
 const encrypt = new JSEncrypt()
+// 生成密钥对
+const key = encrypt.getKey()
+const publicKey = key.getPublicKey()  // 获取公钥
+const privateKey = key.getPrivateKey() // 获取私钥
 
-const privateKey = encrypt.getPrivateKey()
-const publicKey = encrypt.getPublicKey()
+export const getDecryptPublicKey = () => publicKey
 
-export const getDecryptKey = () => {
-    return {
-        publicKey,
-        privateKey
-    }
-}
-
-export const rsaDecrypt = (data: string) => {
+export const rsaDecrypt = (data: string): string => {
     const decrypt = new JSEncrypt()
     decrypt.setPrivateKey(privateKey)
-    const decrypted = decrypt.decrypt(data)
-    return decrypted
+    return decrypt.decrypt(data) || ''
 }

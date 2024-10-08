@@ -29,11 +29,8 @@ declare namespace NodeJS {
         // redis-password
         REDIS_PASSWORD: string
 
-        // jwt secret
-        JWT_SECRET: string
-
-        // rsa private key
-        RSA_PUBLIC_KEY: string
+        // jwt secret key
+        JWT_SECRET_KEY: string
     }
   }
   

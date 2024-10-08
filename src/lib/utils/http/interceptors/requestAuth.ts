@@ -1,4 +1,4 @@
-import { whiteApis } from '@/lib/configs/whiteAips'
+import { isWhiteApi } from '@/lib/configs/whiteAips'
 import { clientStore } from '@/lib/store/client'
 import { logOut } from '@/lib/utils/client'
 import type { IInterceptor } from '@/lib/utils/http/interceptors/index'
@@ -11,7 +11,7 @@ export const requestAuth: IInterceptor<InternalAxiosRequestConfig> = {
         if (token) {
             config.headers.Authorization = `Bearer ${ token }`
         } else {
-            if (!config.url || !whiteApis.includes(config.url)) {
+            if (!config.url || !isWhiteApi(config.url)) {
                 logOut()
             }
         }

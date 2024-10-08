@@ -12,8 +12,8 @@ export async function POST () {
     }
     try {
         await syncDb()
-    } catch (_) {
-        return sendResponseJson(false, '数据库同步失败，详细日志请查看log文件夹下的log.txt', 500)
+    } catch (error: any) {
+        return sendResponseJson(false, typeof error === 'string' ? error : error?.message, 500)
     }
     return sendResponseJson(true, '数据库同步成功')
 }

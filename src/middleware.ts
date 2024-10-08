@@ -1,9 +1,9 @@
-import { whiteApis } from '@/lib/configs/whiteAips'
+import { isWhiteApi } from '@/lib/configs/whiteAips'
 import { sendResponseJson } from '@/lib/utils/server/serverResponse'
 import { NextRequest, NextResponse } from 'next/server'
 
 export async function middleware(request: NextRequest) {
-    if (!whiteApis.includes(request.nextUrl.pathname)) {
+    if (!isWhiteApi(request.nextUrl.pathname)) {
         // 拿到请求头
         const headers = request.headers
         const authorization = headers.get('Authorization')

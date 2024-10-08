@@ -1,11 +1,10 @@
 'use client'
 import { useLoginStatus } from '@/lib/hooks/useLoginStatus'
 import { useUserInfo } from '@/lib/hooks/useUserInfo'
-import { rsaEncrypt } from '@/lib/utils/client'
+import { http, rsaEncrypt } from '@/lib/utils/client'
 import type { FormProps } from 'antd'
 import { Button, Checkbox, ConfigProvider, Form, Input } from 'antd'
 import FormItem from 'antd/es/form/FormItem'
-import axios from 'axios'
 
 interface IFormProps extends FormProps {
     account: string
@@ -21,8 +20,7 @@ const LoginComponent = () => {
     const login = async () => {
         const formModel = form.getFieldsValue()
         const password = await rsaEncrypt(formModel.password)
-        // TODO 模拟
-        await axios.post('/api/auth/registry', {username: formModel.account, password})
+        await http.post('/api/auth/login', { account: formModel.account, password })
         closeLoginModal()
     }
 

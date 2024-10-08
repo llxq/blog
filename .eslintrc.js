@@ -2,8 +2,6 @@ module.exports = {
     // 继承 Next.js 的核心 Web 生存期指标规则和 TypeScript 规则
     extends: ['next/core-web-vitals', 'next/typescript',],
     rules: {
-        // 禁止未使用变量，但允许使用下划线开头的变量
-        'no-unused-vars': [1, { args: 'after-used', argsIgnorePattern: '^_', },],
         // 关闭在 JSX 中隐式使用 React 的规则
         'react/react-in-jsx-scope': 'off',
         // 关闭 React prop-types 的规则

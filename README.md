@@ -1,5 +1,5 @@
 # desc
-this is a blog app，use NextJs、ReactJs and MySql technology
+this is a blog app，use NextJs、ReactJs、redis、sequelize and MySql technology
 
 
 # run
