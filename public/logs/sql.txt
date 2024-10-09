@@ -296,3 +296,94 @@
 [2024-10-8 22:46:14]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
 [2024-10-8 22:46:44]: Executing (default): SELECT 1+1 AS result 
 [2024-10-8 22:46:44]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 11:35:5]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 11:35:5]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 11:35:5]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 11:35:5]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 11:36:52]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 11:36:52]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 11:36:52]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 11:36:52]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 15:15:39]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:15:39]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 15:15:39]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 15:16:36]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 15:16:36]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:16:36]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 15:16:36]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 15:17:39]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 15:17:39]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:17:39]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 15:17:39]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 15:22:27]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 15:22:27]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:22:42]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:22:42]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 15:22:42]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 15:23:19]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 15:23:19]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:23:28]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:23:28]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 15:23:28]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 15:24:44]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 15:24:44]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:24:44]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 15:24:44]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 15:25:23]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 15:25:23]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:25:23]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 15:25:23]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 15:26:45]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 15:26:45]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:28:56]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 15:28:56]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:28:57]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 15:28:57]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 15:52:40]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 15:52:40]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:55:24]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 15:55:24]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 15:55:24]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 15:55:24]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 16:5:27]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 16:5:27]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:5:27]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 16:5:27]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 16:13:12]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 16:13:12]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:13:29]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 16:13:29]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 16:15:54]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 16:15:54]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:16:8]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:16:8]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 16:16:8]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 16:23:6]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 16:23:6]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:24:5]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 16:24:5]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:24:11]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:24:22]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:24:23]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 16:24:23]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 16:24:46]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:24:46]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 16:24:46]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 16:25:19]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:25:19]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 16:25:20]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 16:25:54]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:25:54]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 16:25:54]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 16:26:23]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 16:26:23]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:26:23]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 16:26:23]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 16:27:31]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 16:27:31]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:27:31]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 16:27:31]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-9 16:31:27]: Executing (default): SELECT 1+1 AS result 
+[2024-10-9 16:31:27]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'admin@qq.com'; 
+[2024-10-9 16:31:27]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-9 16:31:27]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 

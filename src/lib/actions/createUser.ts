@@ -1,3 +1,4 @@
+import { login } from '@/lib/actions/login'
 import { IUser, User } from '@/lib/db/models'
 import { rsaDecrypt } from '@/lib/utils/server'
 import { getEncryptData } from '@/lib/utils/server/encrypt'
@@ -16,5 +17,7 @@ export const createUser = async (userInfo: IUser) => {
     const rsaPassword = rsaDecrypt(password)
     // 加密存储
     const encryptPassword = await getEncryptData(rsaPassword)
-    return await User.create({ ...userInfo, id: v4(), password: encryptPassword, })
+    const userData = await User.create({ ...userInfo, id: v4(), password: encryptPassword, })
+    // 注册成功 自动登录
+    return await login(userData.username, password)
 }

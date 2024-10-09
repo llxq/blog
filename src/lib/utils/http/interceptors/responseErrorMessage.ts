@@ -7,6 +7,7 @@ export const responseErrorMessage: IInterceptor<AxiosResponse> = {
         const { code, message: responseMessage, } = response.data
         if (code !== 200) {
             message.error(responseMessage || '未知错误')
+            return Promise.reject(response)
         }
         return response
     },

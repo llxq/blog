@@ -1,4 +1,5 @@
 'use client'
+import { useUserInfo } from '@/lib/hooks/useUserInfo'
 import { rsaEncrypt } from '@/lib/utils/client'
 import { http } from '@/lib/utils/http'
 import { QuestionCircleOutlined } from '@ant-design/icons'
@@ -20,6 +21,7 @@ const RegisterPage = () => {
     const [ form, ] = Form.useForm<IFormProps>()
     const router = useRouter()
     const [ loading, setLoading, ] = useState(false)
+    const { setUserInfo } = useUserInfo()
 
     const register = async () => {
         setLoading(true)
@@ -27,8 +29,9 @@ const RegisterPage = () => {
             const { againPassword, ...formModel } = form.getFieldsValue()
             // 加密
             const password = await rsaEncrypt(againPassword)
-            await http.post('/api/auth/register', { ...formModel, password, })
-            message.success('注册成功')
+            const { data, } = await http.post('/api/auth/register', { ...formModel, password, })
+            setUserInfo(data)
+            message.success('注册成功，正在跳转首页')
             router.push('/', { scroll: false, })
         } finally {
             setLoading(false)

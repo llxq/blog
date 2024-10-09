@@ -6,8 +6,12 @@ import { NextRequest } from 'next/server'
  * @param userId 通过 userId 获取 token
  * @returns token
  */
-export const generateToken = (userId: string) => {
-    return jwt.sign(userId, process.env.JWT_SECRET_KEY, { expiresIn: '2h', })
+export const generateToken = async (userId: string) => {
+    try {
+        return jwt.sign({ userId }, process.env.JWT_SECRET_KEY, { expiresIn: '2h', })
+    } catch (error) {
+        return Promise.reject(error)
+    }
 }
 
 export const authenticateToken = (token: string) => {

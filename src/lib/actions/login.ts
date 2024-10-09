@@ -26,6 +26,6 @@ export const login = async (account: string, password: string) => {
     }
     const { userId, password: _, ...userInfo } = data.dataValues as User & { userId: string }
     // 生成token
-    const token = generateToken(userId)
+    const token = await generateToken(userId)
     return { token, ...userInfo, userId, }
 }
