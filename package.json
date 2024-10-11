@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:minio": "node scripts/dev.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -19,6 +20,7 @@
     "ioredis": "^5.4.1",
     "jsencrypt": "^3.3.2",
     "jsonwebtoken": "^9.0.2",
+    "minio": "^8.0.1",
     "mysql2": "^3.11.3",
     "next": "14.2.13",
     "react": "^18",

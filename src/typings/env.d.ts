@@ -31,6 +31,14 @@ declare namespace NodeJS {
 
         // jwt secret key
         JWT_SECRET_KEY: string
+
+        // minio host
+        MINIO_HOST: string
+        // minio port
+        MINIO_PORT: string
+        // minio access key
+        MINIO_ACCESS_KEY: string
+        // minio secret key
+        MINIO_SECRET_KEY: string
     }
   }
-  

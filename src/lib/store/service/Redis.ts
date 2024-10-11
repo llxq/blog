@@ -1,7 +1,7 @@
 import { Logger } from '@/lib/utils/server'
 import Redis, { type RedisOptions } from 'ioredis'
 
-const { REDIS_HOST, REDIS_PASSWORD, REDIS_PORT } = process.env
+const { REDIS_HOST, REDIS_PASSWORD, REDIS_PORT, } = process.env
 
 const redisConfig: RedisOptions = {
     host: REDIS_HOST,
@@ -9,14 +9,15 @@ const redisConfig: RedisOptions = {
     password: REDIS_PASSWORD,
 }
 
-const RedisInstance = new Redis(redisConfig)
+// const RedisInstance = new Redis(redisConfig)
+const RedisInstance = null
 
-RedisInstance.on('connect', () => {
-    Logger.log('Redis connected')
-})
+// RedisInstance.on('connect', () => {
+//     Logger.log('Redis connected')
+// })
 
 
 export {
-    RedisInstance
+    RedisInstance,
 }
 

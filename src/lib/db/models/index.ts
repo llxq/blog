@@ -6,5 +6,6 @@ export * from './tables/Like'
 export * from './tables/Post'
 export * from './tables/Story'
 export * from './tables/User'
+export * from './tables/Files'
 import './related'
 
