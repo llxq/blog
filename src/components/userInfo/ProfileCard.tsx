@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { Button } from 'antd'
 
 export const ProfileCard = () => {
-
     return (
         <div className="flex flex-col gap-4 text-sm shadow-md rounded-lg bg-white p-4">
             <div className="h-20 relative">

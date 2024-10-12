@@ -1,8 +1,13 @@
 const { spawn } = require('child_process')
 const path = require('path')
+// 判断是否为mac
+const isMac = process.platform === 'darwin'
 
 /* 加载系统环境变量给minio使用 */
 const loadEnvVariables = () => {
+    if (!isMac) {
+        return Promise.resolve({})
+    }
     // 加载 ~/.bash_profile 中的环境变量
     const bashProfilePath = path.join(process.env.HOME, '.bash_profile')
     const loadEnvCommand = `source ${bashProfilePath} && env`

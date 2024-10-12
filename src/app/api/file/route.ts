@@ -1,24 +1,26 @@
+import { FILE_CONFIG } from '@/lib/configs/fileConfig'
+import { Files } from '@/lib/db/models'
 import { MinioClient } from '@/lib/store/service'
-import { Auth, sendResponseJson } from '@/lib/utils/server'
+import { getCurrentTime } from '@/lib/utils'
+import { sendResponseJson } from '@/lib/utils/server'
 import { NextRequest } from 'next/server'
+import { v4 } from 'uuid'
 
-/**
- * 获取文件（预览）
- * @constructor
- */
-export const GET = Auth(async (request: NextRequest) => {
-    // 输出所有的🪣
-    const files = await MinioClient.getPreviewUrl('熊猫谈钢琴.png')
-    return sendResponseJson({
-        files,
-    }, '🪣获取成功', 200)
-})
-
-export const POST = Auth(async (request: NextRequest) => {
-    const formData = await request.formData()
-    if (!formData) {
-        return sendResponseJson(false, '参数类型不对，请重试', 500)
+export const POST = async (req: NextRequest) => {
+    try {
+        // 使用 form.parse 解析表单数据和文件
+        const data = await req.formData()
+        const file = data.get('file') as File
+        const type = data.get('type') as string || 'POST'
+        const typeDir = Reflect.get(FILE_CONFIG, type) as string || ''
+        const arrayBuffer = await file.arrayBuffer()
+        const buffer = Buffer.from(arrayBuffer)
+        const filePath = `${ typeDir }${ getCurrentTime() }${ file.name }`
+        const { etag, } = await MinioClient.uploadFile({ name: filePath, stream: buffer, size: file.size, mimetype: file.type, })
+        const { dataValues: { id, }, } = await Files.create({ id: v4(), path: filePath, etag, })
+        return sendResponseJson({ id, }, '上传成功', 200)
+    } catch (error) {
+        console.error('Error handling form data:', error)
+        return sendResponseJson(false, '上传失败', 500)
     }
-    const type = formData.get('type')
-    return sendResponseJson({ type, }, '文件上传成功', 200)
-})
+}

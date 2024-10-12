@@ -7,7 +7,6 @@ import { useParams } from 'next/navigation'
 
 const ProfilePage = () => {
     const { id: userId, } = useParams()
-
     return (
         <div className="flex gap-6 pt-6 pb-6 w-full">
             <div className="hidden xl:block w-[20%] sticky">

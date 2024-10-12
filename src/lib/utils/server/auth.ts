@@ -8,7 +8,7 @@ import { NextRequest } from 'next/server'
  */
 export const generateToken = async (userId: string) => {
     try {
-        return jwt.sign({ userId }, process.env.JWT_SECRET_KEY, { expiresIn: '2h', })
+        return jwt.sign({ userId, }, process.env.JWT_SECRET_KEY, { expiresIn: '2h', })
     } catch (error) {
         return Promise.reject(error)
     }

@@ -46,3 +46,13 @@ export const { setUserInfo, clearUserInfo, } = USER_INFO_SLICE.actions
 export type IUserInfoDispatch = typeof USER_INFO_SLICE.actions
 
 export const UserInfoReducer = USER_INFO_SLICE.reducer
+
+
+/**
+ * Selector to get Authorization header
+ */
+export const getAuthHeader = (token: string) => {
+    return {
+        Authorization: `Bearer ${ token }`,
+    }
+}

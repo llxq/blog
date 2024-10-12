@@ -13,6 +13,6 @@ const http = axios.create({
 installInterceptors(http)
 
 export {
-    http
+    http,
 }
 

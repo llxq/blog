@@ -5,6 +5,8 @@ export interface IFiles {
     id: string
     /* 文件路径 */
     path: string
+    // etag: string
+    etag: string
 }
 
 @InjectModel<Files>({
@@ -19,6 +21,7 @@ export interface IFiles {
         unique: true,
         allowNull: false,
     },
+    etag: DataTypes.STRING,
 }, {
     tableName: 'files',
 })
@@ -26,4 +29,6 @@ export class Files extends Model<IFiles, Optional<IFiles, 'id'>> implements IFil
     public id!: string
     /* 文件路径 */
     public path!: string
+
+    public etag!: string
 }

@@ -38,13 +38,16 @@ export interface IMinioFile {
 
 export interface IUploadFile {
     name: string
-    stream: string
+    stream: any
     size: number
     mimetype: string
 }
 
 export class MinioClient {
-    public static async uploadFile ({ name, stream, size, mimetype,  }: IUploadFile) {
+    public static async uploadFile ({ name, stream, size, mimetype, }: IUploadFile): Promise<{
+        etag: string;
+        versionId: string | null
+    }> {
         Logger.log(`上传文件：${ name }`)
         return MINIO_CLIENT.putObject(MINIO_BUCKET!, name, stream, size, {
             'Content-Type': mimetype,

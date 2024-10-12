@@ -1,7 +1,7 @@
-import React from 'react'
-import Image from 'next/image'
-import { Input } from 'antd'
 import { Avatar } from '@/components/Avatar'
+import { UploadImage } from '@/components/UploadImage'
+import { Input } from 'antd'
+import Image from 'next/image'
 
 const { TextArea, } = Input
 
@@ -21,10 +21,12 @@ export const AddPost = () => {
                 </div>
                 { /*post options*/ }
                 <div className="flex items-center gap-4 mt-4 text-gray-400 flex-wrap">
-                    <div className="flex items-center gap-2 cursor-pointer text-sm">
-                        <Image src="/addimage.png" alt="图片" width={ 20 } height={ 20 } />
-                        <span>图片</span>
-                    </div>
+                    <UploadImage>
+                        <div className="flex items-center gap-2 cursor-pointer text-sm text-gray-400">
+                            <Image src="/addimage.png" alt="图片" width={ 20 } height={ 20 } />
+                            <span>图片</span>
+                        </div>
+                    </UploadImage>
                     <div className="flex items-center gap-2 text-sm">
                         <Image src="/addVideo.png" alt="视频" width={ 20 } height={ 20 } />
                         <span>视频</span>

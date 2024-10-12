@@ -11,3 +11,9 @@ html,body {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+.reset-ui {
+    &:where(.css-dev-only-do-not-override-ccdg5a).ant-upload-wrapper {
+        line-height: 0;
+    }
+}
