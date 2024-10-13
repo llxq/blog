@@ -1,7 +1,7 @@
 import { Files } from '@/lib/db/models'
 import { MinioClient } from '@/lib/store/service'
 import { Auth, sendResponseJson } from '@/lib/utils/server'
-import { NextRequest } from 'next/server'
+import type { NextRequest } from 'next/server'
 
 /**
  * 获取文件（预览）

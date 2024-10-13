@@ -21,7 +21,7 @@ const RegisterPage = () => {
     const [ form, ] = Form.useForm<IFormProps>()
     const router = useRouter()
     const [ loading, setLoading, ] = useState(false)
-    const { setUserInfo } = useUserInfo()
+    const { setUserInfo, } = useUserInfo()
 
     const register = async () => {
         setLoading(true)
@@ -58,7 +58,7 @@ const RegisterPage = () => {
                             { required: true, message: '请输入邮箱', },
                             { type: 'email', message: '请输入正确的邮箱', },
                         ] }>
-                            <Input className="h-[38px]" autoFocus={ true } placeholder="请输入账号/邮箱" />
+                            <Input className="h-[38px]" placeholder="请输入账号/邮箱" />
                         </FormItem>
                         <FormItem hasFeedback label={
                             <div className='flex gap-2 justify-end align-bottom'>
@@ -70,17 +70,21 @@ const RegisterPage = () => {
                         } name="password" rules={ [
                             { required: true, message: '请输入密码', },
                             // TODO: 密码长度，密码强度 大小写，数字，特殊字符
-                            // ({ getFieldValue, }) => {
-                            //     return {
-                            //         validator (_, value) {
-                            //             if (!value || getFieldValue('password').length >= 8) {
-                            //                 return Promise.resolve()
-                            //             } else {
-                            //                 return Promise.reject('密码长度不足')
-                            //             }
-                            //         },
-                            //     }
-                            // },
+                            ({ getFieldValue, }) => {
+                                return {
+                                    validator (_, value) {
+                                        if (!value || getFieldValue('password').length >= 8) {
+                                            // 判断是否有大小写，数字，特殊字符
+                                            if (/[A-Z]/.test(value) && /[a-z]/.test(value) && /[0-9]/.test(value) && /[^A-Za-z0-9]/.test(value)) {
+                                                return Promise.resolve()
+                                            }
+                                            return Promise.reject('密码必须包含大小写字母、数字、特殊字符！')
+                                        } else {
+                                            return Promise.reject('密码长度不足')
+                                        }
+                                    },
+                                }
+                            },
                         ] }>
                             <Password placeholder="请输入密码" className="h-[38px]" />
                         </FormItem>

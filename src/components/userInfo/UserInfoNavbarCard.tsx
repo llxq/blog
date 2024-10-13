@@ -1,3 +1,6 @@
+import { useUserInfo } from '@/lib/hooks/useUserInfo'
+
 export const UserInfoNavbarCard = () => {
-    return <div>UserInfoNavbarCard</div>
+    const { username, } = useUserInfo()
+    return <div>{ username }</div>
 }

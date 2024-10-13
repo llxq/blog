@@ -13,6 +13,8 @@ const nextConfig = {
     experimental: {
         serverComponentsExternalPackages: ['sequelize',],
     },
+    // 关闭严格模式
+    reactStrictMode: false,
 }
 
 export default nextConfig

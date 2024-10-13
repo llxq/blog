@@ -30,6 +30,8 @@ const LoginComponent = () => {
             // 初始化登录信息
             setUserInfo(data)
             closeLoginModal()
+            // 刷新页面
+            window.location.reload()
         } finally {
             setLoading(false)
         }
@@ -83,7 +85,7 @@ const LoginComponent = () => {
                                 <Button loading={ loading } htmlType="submit" type="primary" size="large" className="w-full font-bold ">登录
                                 </Button>
                                 <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
-                                    现在注册? <Link href="/register" className="text-blue-700 hover:underline dark:text-blue-500 pl-1">创建账号</Link>
+                                    现在注册? <Link onClick={ () => closeLoginModal() } href="/register" className="text-blue-700 hover:underline dark:text-blue-500 pl-1">创建账号</Link>
                                 </div>
                             </Form>
                         </ConfigProvider>

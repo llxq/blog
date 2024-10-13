@@ -2,7 +2,7 @@ import { RedisInstance } from '@/lib/store/service/Redis'
 
 interface IServiceUserInfo {
     /* 用户名 */
-    userName: string
+    username: string
     /* token */
     token: string
     /* 用户id */

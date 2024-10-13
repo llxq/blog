@@ -19,6 +19,10 @@ export interface IUser {
     website?: string
 }
 
+export interface IClientUser extends IUser {
+    userId: string
+}
+
 @InjectModel<User>({
     id: {
         type: DataTypes.STRING,
@@ -40,7 +44,7 @@ export interface IUser {
     email: {
         type: DataTypes.STRING,
         unique: true,
-        comment: '邮箱'
+        comment: '邮箱',
     },
     avatar: DataTypes.STRING,
     cover: DataTypes.STRING,

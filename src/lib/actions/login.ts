@@ -12,8 +12,8 @@ export const login = async (account: string, password: string) => {
                 { email: account, },
             ],
         },
-        // FIXME: userName, userId 不想改了。。所以查询的时候加个别名
-        attributes: [[col('id'), 'userId',], 'password', 'avatar', [col('username'), 'userName',],],
+        // FIXME userId 不想改了。。所以查询的时候加个别名
+        attributes: [[col('id'), 'userId',], 'password', 'avatar', 'username',],
     })
     if (!data?.dataValues) {
         return Promise.reject('账号不存在，请检查用户名或邮箱')

@@ -698,3 +698,54 @@
 [2024-10-11 17:15:49]: Executing (default): DROP TABLE IF EXISTS `files`; 
 [2024-10-11 17:15:49]: Executing (default): CREATE TABLE IF NOT EXISTS `files` (`id` VARCHAR(255) NOT NULL UNIQUE , `path` VARCHAR(255) NOT NULL UNIQUE, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB; 
 [2024-10-11 17:15:49]: Executing (default): SHOW INDEX FROM `files` 
+[2024-10-13 16:59:34]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 16:59:34]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-13 17:1:19]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 17:1:19]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'chendf@qq.com'; 
+[2024-10-13 17:1:19]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-13 17:1:19]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-13 17:20:14]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 17:20:14]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'admin' OR `User`.`email` = 'admin') LIMIT 1; 
+[2024-10-13 17:22:22]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 17:22:22]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-13 17:24:41]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 17:24:41]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` AS `userName` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-13 17:29:39]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 17:29:39]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-13 18:33:50]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 18:33:52]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 18:33:59]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 18:38:16]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 18:38:18]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 18:38:25]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 18:38:26]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 18:40:23]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 18:41:3]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:0:25]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:0:30]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:0:48]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:0:49]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:1:15]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:1:16]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:2:44]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:3:31]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:3:33]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:4:52]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:4:54]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:6:11]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:6:12]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:10:24]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:10:26]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-13 20:10:26]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:11:24]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-13 20:11:27]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:11:50]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-13 20:11:54]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:13:57]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:13:57]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-13 20:14:10]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:14:14]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:14:14]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-13 20:15:3]: Executing (default): SELECT 1+1 AS result 
+[2024-10-13 20:15:3]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-13 20:15:5]: Executing (default): SELECT 1+1 AS result 
