@@ -3,8 +3,8 @@ import type { AxiosResponse } from 'axios'
 import type { IInterceptor } from '../interceptors/index'
 
 export const responseErrorMessage: IInterceptor<AxiosResponse> = {
-    onFulfilled: (response) => {
-        const { code, message: responseMessage, } = response.data
+    onFulfilled: response => {
+        const { code, message: responseMessage, } = response
         if (+code !== 200) {
             message.error(responseMessage || '未知错误')
             return Promise.reject(response)

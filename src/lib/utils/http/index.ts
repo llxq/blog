@@ -2,8 +2,8 @@ import axios from 'axios'
 import { installInterceptors } from './interceptors/index'
 
 const http = axios.create({
-    /* 配置 5s 超时 */
-    timeout: 5000,
+    /* 配置 10s 超时 */
+    timeout: 10000,
     headers: {
         'Content-Type': 'application/json;charset=UTF-8',
     },

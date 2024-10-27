@@ -1,9 +1,10 @@
+import { UserAvatar } from '@/components/Avatar'
 import { UserInfoNavbarCard } from '@/components/userInfo/UserInfoNavbarCard'
 import { useAuthAction } from '@/lib/hooks/useAuthAction'
 import { useUserInfo } from '@/lib/hooks/useUserInfo'
 import { Popover } from 'antd'
 import Image from 'next/image'
-import type { MouseEvent } from 'react'
+import { useState, type MouseEvent } from 'react'
 
 const UnLoginComponent = () => {
     const loginAndRegistry = useAuthAction<MouseEvent<HTMLSpanElement>>(event => {
@@ -27,24 +28,28 @@ const UnLoginComponent = () => {
 }
 
 const LoginComponent = () => {
-    const { avatar, } = useUserInfo()
+    const [open, setOpen,] = useState(false)
+
     const openUserInfo = useAuthAction<MouseEvent<HTMLDivElement>>(event => {
         console.log(event, '123')
     })
+
+    const closePopover = () => {
+        setOpen(false)
+    }
+
+    const handleOpenChange = (newOpen: boolean) => {
+        setOpen(newOpen)
+    }
+
     return (
         <div className="gap-6 items-center flex">
             <Image className="cursor-pointer" title="好友" src="/people.png" alt="好友" width={ 20 } height={ 20 } />
             <Image className="cursor-pointer" title="消息" src="/messages.png" alt="消息" width={ 16 } height={ 16 } />
             <Image className="cursor-pointer" title="通知" src="/notifications.png" alt="通知" width={ 16 } height={ 16 } />
-            <Popover content={ <UserInfoNavbarCard /> } placement="topRight" arrow={ false } trigger="click">
-                <div className="cursor-pointer hidden md:block w-max" onClick={ openUserInfo }>
-                    {
-                        avatar ? (
-                            <Image src={ avatar } alt="头像" width={ 32 } height={ 32 } />
-                        ) : (
-                            <div className="rounded-full w-[32px] h-[32px] bg-blue-100"></div>
-                        )
-                    }
+            <Popover open={ open } onOpenChange={ handleOpenChange } content={ <UserInfoNavbarCard onClick={ closePopover } /> } placement="topRight" arrow={ false } trigger="click">
+                <div className="w-8 h-8 cursor-pointer hidden md:block" onClick={ openUserInfo }>
+                    <UserAvatar />
                 </div>
             </Popover>
         </div>

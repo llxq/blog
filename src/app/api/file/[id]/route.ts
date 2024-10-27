@@ -12,12 +12,12 @@ export const GET = Auth(async (_: NextRequest, { params , }) => {
     // 查找对应的path
     const file = await Files.findOne({
         where: { id, },
-        attributes: ['path',],
+        attributes: ['path', 'file_name',],
     })
     if (!file?.dataValues) {
         return sendResponseJson(false, '文件不存在', 404)
     }
     // 获取对应的文件
     const bucketFile = await MinioClient.getPreviewUrl(file.dataValues.path)
-    return sendResponseJson({ url: bucketFile, }, '资源获取成功', 200)
+    return sendResponseJson({ url: bucketFile, fileName: file.dataValues.file_name, }, '资源获取成功', 200)
 })

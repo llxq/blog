@@ -1,7 +1,7 @@
 import { login } from '@/lib/actions/login'
-import { Auth, sendResponseJson } from '@/lib/utils/server'
+import { sendResponseJson } from '@/lib/utils/server'
 
-export const POST = Auth(async (request: Request) => {
+export const POST = async (request: Request) => {
     const body = await request.json()
     const { account, password, } = body
     try {
@@ -10,4 +10,4 @@ export const POST = Auth(async (request: Request) => {
     } catch (error: string | any) {
         return sendResponseJson(false, error, 500)
     }
-})
+}

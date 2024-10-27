@@ -3,8 +3,9 @@ import { DataTypes, Model, Optional } from 'sequelize'
 
 interface IFollower {
     id: number
-    // user id
+    // 粉丝
     followerId: string
+    // 粉丝
     followingId: string
 }
 
@@ -17,10 +18,12 @@ interface IFollower {
     followerId: {
         type: DataTypes.STRING,
         allowNull: false,
+        comment: '粉丝',
     },
     followingId: {
         type: DataTypes.STRING,
         allowNull: false,
+        comment: '被关注的人',
     },
 }, {
     tableName: 'followers',

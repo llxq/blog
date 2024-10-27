@@ -1,15 +1,5 @@
+import type { IClientUser } from '@/lib/utils/UserInterface'
 import { createSlice } from '@reduxjs/toolkit'
-
-export interface IUserInfoState {
-    /* 用户名 */
-    username: string
-    /* token */
-    token: string
-    /* 用户id */
-    userId: string
-    /* 头像 */
-    avatar?: string
-}
 
 /**
  * 用户信息store
@@ -17,11 +7,24 @@ export interface IUserInfoState {
 const USER_INFO_SLICE = createSlice({
     name: 'userInfo',
     initialState: {
+        id: '',       
         username: '',
-        token: '',
-        userId: '',
-        avatar: '',
-    } as IUserInfoState,
+        password: '',
+        userId: '',   
+        postCount: 0,          
+        followerCount: 0,       
+        followCount: 0,          
+        email: '', 
+        avatar: '', 
+        cover: '',   
+        name: '',            
+        surname: '',          
+        description: '', 
+        city: '',        
+        school: '', 
+        work: '', 
+        website: '', 
+    } as IClientUser,
     reducers: {
         /**
          * 设置用户信息

@@ -3,7 +3,7 @@ import { LeftMenu } from '@/components/contents/LeftMenu'
 import { Feed } from '@/components/contents/feed/Feed'
 import { RightMenu } from '@/components/contents/right/RightMenu'
 import { useLoading } from '@/lib/context/LoadingContext'
-import type { IClientUser } from '@/lib/db/models'
+import type { IClientUser } from '@/lib/utils/UserInterface'
 import { http } from '@/lib/utils/http'
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
@@ -36,15 +36,15 @@ const ProfilePage = () => {
                         <h1 className="mt-20 mb-4 text-2xl font-medium">{ userDetails?.username }</h1>
                         <div className="flex items-center gap-12 mb-4 justify-center">
                             <div className="flex items-center flex-col">
-                                <span className="font-medium">123</span>
+                                <span className="font-medium">{ userDetails?.postCount || 0 }</span>
                                 <span className="text-sm text-slate-600">帖子</span>
                             </div>
                             <div className="flex items-center flex-col">
-                                <span className="font-medium">1.2K</span>
+                                <span className="font-medium">{ userDetails?.followerCount || 0 }</span>
                                 <span className="text-sm text-slate-600">粉丝</span>
                             </div>
                             <div className="flex items-center flex-col">
-                                <span className="font-medium">1.3K</span>
+                                <span className="font-medium">{ userDetails?.followCount || 0 }</span>
                                 <span className="text-sm text-slate-600">关注</span>
                             </div>
                         </div>

@@ -25,7 +25,7 @@ const LoginComponent = () => {
         try {
             const formModel = form.getFieldsValue()
             const password = await rsaEncrypt(formModel.password)
-            const { data, } = await http.post('/api/auth/login', { account: formModel.account, password, })
+            const { data, } = await http.post('/api/public/login', { account: formModel.account, password, })
             message.success('登录成功')
             // 初始化登录信息
             setUserInfo(data)

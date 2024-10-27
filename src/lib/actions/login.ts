@@ -1,3 +1,4 @@
+import { getOtherUserInfo } from '@/lib/actions/getUserInfo'
 import { User } from '@/lib/db/models'
 import { generateToken, rsaDecrypt } from '@/lib/utils/server'
 import { compareEncryptData } from '@/lib/utils/server/encrypt'
@@ -27,5 +28,6 @@ export const login = async (account: string, password: string) => {
     const { userId, password: _, ...userInfo } = data.dataValues as User & { userId: string }
     // 生成token
     const token = await generateToken(userId)
-    return { token, ...userInfo, userId, }
+    const otherUserInfo = await getOtherUserInfo(userId)
+    return { token, ...userInfo, userId, ...otherUserInfo, }
 }

@@ -7,6 +7,8 @@ export interface IFiles {
     path: string
     // etag: string
     etag: string
+    // file_name
+    file_name?: string
 }
 
 @InjectModel<Files>({
@@ -22,6 +24,7 @@ export interface IFiles {
         allowNull: false,
     },
     etag: DataTypes.STRING,
+    file_name: DataTypes.STRING,
 }, {
     tableName: 'files',
 })
@@ -31,4 +34,6 @@ export class Files extends Model<IFiles, Optional<IFiles, 'id'>> implements IFil
     public path!: string
 
     public etag!: string
+
+    public file_name?: string
 }

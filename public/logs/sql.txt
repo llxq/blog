@@ -749,3 +749,370 @@
 [2024-10-13 20:15:3]: Executing (default): SELECT 1+1 AS result 
 [2024-10-13 20:15:3]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
 [2024-10-13 20:15:5]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 19:54:59]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 19:54:59]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-24 19:55:5]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-24 19:56:28]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 19:56:28]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?); 
+[2024-10-24 20:6:34]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:6:34]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?); 
+[2024-10-24 20:11:13]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:11:13]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?); 
+[2024-10-24 20:16:2]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:16:2]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?); 
+[2024-10-24 20:16:4]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:16:5]: Executing (default): SELECT `path` FROM `files` AS `Files` WHERE `Files`.`id` = '936f5090-47f6-4b28-acc7-8cd4194de98d'; 
+[2024-10-24 20:16:5]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:17:22]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:17:22]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?); 
+[2024-10-24 20:17:23]: Executing (default): SELECT `path` FROM `files` AS `Files` WHERE `Files`.`id` = 'e19dfc61-ead1-4049-a050-bf32b2e94960'; 
+[2024-10-24 20:17:24]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:17:57]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:17:57]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?); 
+[2024-10-24 20:20:23]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:20:23]: Executing (default): SELECT `path` FROM `files` AS `Files` WHERE `Files`.`id` = 'a39f4721-45e9-4567-a7ee-43c0556030f3'; 
+[2024-10-24 20:20:26]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:20:29]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:20:29]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?); 
+[2024-10-24 20:20:29]: Executing (default): SELECT `path` FROM `files` AS `Files` WHERE `Files`.`id` = 'e065bb17-05fe-4f15-a58b-f1c7346860a3'; 
+[2024-10-24 20:20:30]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:28:27]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:28:27]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:28:29]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:28:29]: Executing (default): SELECT `path` FROM `files` AS `Files` WHERE `Files`.`id` = 'e3b2327d-c85a-4281-9830-3d1cecf4024b'; 
+[2024-10-24 20:28:31]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:29:25]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:29:25]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:29:26]: Executing (default): SELECT `path`, `file_name` FROM `files` AS `Files` WHERE `Files`.`id` = 'a6282396-1c1a-476f-bf6e-22cdd9f34359'; 
+[2024-10-24 20:29:27]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:30:38]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:30:38]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:30:40]: Executing (default): SELECT `path`, `file_name` FROM `files` AS `Files` WHERE `Files`.`id` = 'e6c8685a-715d-4f51-9fc7-fff2c116122f'; 
+[2024-10-24 20:30:42]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:37:38]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:37:38]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:37:39]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:37:41]: Executing (default): SELECT `path`, `file_name` FROM `files` AS `Files` WHERE `Files`.`id` = '5dd5f1c0-3630-4c5f-b8aa-06ffe64b5e4d'; 
+[2024-10-24 20:37:41]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:41:55]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:41:55]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:41:56]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:41:56]: Executing (default): SELECT `path`, `file_name` FROM `files` AS `Files` WHERE `Files`.`id` = '40cd01a7-3e29-4e31-8280-3ca6434ab156'; 
+[2024-10-24 20:41:58]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:43:31]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:43:31]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:43:32]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:43:32]: Executing (default): SELECT `path`, `file_name` FROM `files` AS `Files` WHERE `Files`.`id` = 'eef37ff3-257f-43bf-a061-ce07c2b6fc70'; 
+[2024-10-24 20:43:34]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:44:50]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:44:50]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:44:52]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:44:52]: Executing (default): SELECT `path`, `file_name` FROM `files` AS `Files` WHERE `Files`.`id` = 'bb24d43b-8cd3-4f18-8a38-6eff6d51a687'; 
+[2024-10-24 20:44:53]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:47:5]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:47:5]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:47:6]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:47:6]: Executing (default): SELECT `path`, `file_name` FROM `files` AS `Files` WHERE `Files`.`id` = 'd432e82b-70f8-41e5-ba45-e564bc5fe37a'; 
+[2024-10-24 20:47:7]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:47:50]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:47:50]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:47:50]: Executing (default): SELECT `path`, `file_name` FROM `files` AS `Files` WHERE `Files`.`id` = '5164fe6f-14ff-486a-9ac1-b3c11191a644'; 
+[2024-10-24 20:47:51]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:49:18]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:49:18]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:49:19]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:49:19]: Executing (default): SELECT `path`, `file_name` FROM `files` AS `Files` WHERE `Files`.`id` = 'f72bf2b5-f80d-433a-b602-a73f95ca5289'; 
+[2024-10-24 20:49:20]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:49:25]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:49:26]: Executing (default): SELECT `path`, `file_name` FROM `files` AS `Files` WHERE `Files`.`id` = '3fb01d9e-fe10-4297-a982-975c16636b99'; 
+[2024-10-24 20:49:27]: Executing (default): SELECT 1+1 AS result 
+[2024-10-24 20:49:30]: Executing (default): INSERT INTO `files` (`id`,`path`,`etag`,`file_name`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-24 20:49:30]: Executing (default): SELECT `path`, `file_name` FROM `files` AS `Files` WHERE `Files`.`id` = '49cb765a-dd2a-4c9a-8673-362ffd2a4d62'; 
+[2024-10-24 20:49:31]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 11:43:11]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 11:44:23]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 11:44:57]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 11:45:52]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 11:46:50]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 11:47:54]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 11:50:36]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 11:50:36]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-26 11:50:41]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-26 11:50:46]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 11:50:47]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 11:50:48]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 12:41:6]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 12:41:6]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 12:41:8]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 12:41:29]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 12:41:29]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 12:41:30]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 12:41:32]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 12:41:32]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 12:41:34]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:8:15]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:8:15]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:8:15]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:8:16]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:10:31]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:10:31]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:10:31]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:10:32]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:10:59]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:10:59]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:11:0]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:15:26]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:15:26]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:15:26]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:20:20]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:20:20]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:20:20]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:23:10]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:23:10]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:23:10]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:27:39]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:27:39]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:27:39]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:33:37]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:33:37]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:33:37]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:2]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:39:2]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:2]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:6]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:39:6]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:6]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:7]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:7]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:8]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:39:9]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:9]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:10]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 13:39:11]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:11]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:14]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:14]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 13:39:15]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:5:6]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:5:9]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:5:13]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:6:31]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:6:32]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:6:51]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:6:52]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:7:36]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:7:37]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:7:41]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:8:52]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 14:8:53]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:20:16]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:20:16]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-26 15:20:22]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:20:23]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:20:23]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:20:23]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:26:15]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:26:15]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:26:15]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:26:15]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:26:15]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:26:16]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:50:10]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:50:10]: Executing (default): SELECT `id`, `username`, `password`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website`, `createdAt`, `updatedAt` FROM `users` AS `User` WHERE `User`.`email` = 'ldb@qq.com'; 
+[2024-10-26 15:50:10]: Executing (default): INSERT INTO `users` (`id`,`username`,`password`,`email`,`createdAt`,`updatedAt`) VALUES (?,?,?,?,?,?); 
+[2024-10-26 15:50:10]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'ldb' OR `User`.`email` = 'ldb') LIMIT 1; 
+[2024-10-26 15:50:16]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:50:16]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b2168eab-95a0-40fd-87a0-8da20e53285f'; 
+[2024-10-26 15:50:16]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b2168eab-95a0-40fd-87a0-8da20e53285f'; 
+[2024-10-26 15:50:16]: Executing (default): SELECT count(*) AS `count` FROM `followers` AS `Follower` WHERE `Follower`.`followingId` = 'b2168eab-95a0-40fd-87a0-8da20e53285f'; 
+[2024-10-26 15:50:16]: Executing (default): SELECT count(*) AS `count` FROM `followers` AS `Follower` WHERE `Follower`.`followerId` = 'b2168eab-95a0-40fd-87a0-8da20e53285f'; 
+[2024-10-26 15:51:9]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:51:9]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-26 15:51:18]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:51:18]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:18]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:18]: Executing (default): SELECT count(*) AS `count` FROM `followers` AS `Follower` WHERE `Follower`.`followingId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:18]: Executing (default): SELECT count(*) AS `count` FROM `followers` AS `Follower` WHERE `Follower`.`followerId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:26]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:51:26]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:26]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:26]: Executing (default): SELECT count(*) AS `count` FROM `followers` AS `Follower` WHERE `Follower`.`followingId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:26]: Executing (default): SELECT count(*) AS `count` FROM `followers` AS `Follower` WHERE `Follower`.`followerId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:28]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 15:51:52]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:52]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:52]: Executing (default): SELECT count(*) AS `count` FROM `followers` AS `Follower` WHERE `Follower`.`followingId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:52]: Executing (default): SELECT count(*) AS `count` FROM `followers` AS `Follower` WHERE `Follower`.`followerId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 15:51:53]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:11:6]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:11:6]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:11:6]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:11:8]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:12:12]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:12:14]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:12:14]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:12:14]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:12:59]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:12:59]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:12:59]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:12:59]: Executing (default): SELECT COUNT(CASE(`when` = 'followerId', 'b9921937-3a47-4804-8bc9-c7e458f513c0' AND `then` = 1)) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:13:0]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:13:19]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:13:19]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:13:19]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:13:20]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:14:23]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:14:23]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:14:23]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:14:25]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:17:16]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:17:16]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:17:16]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:17:18]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:17:51]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:17:51]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:17:51]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:17:53]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:18:6]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:18:6]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:18:6]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:18:6]: Executing (default): SELECT COUNT(WHEN(`when` = 'followingId', 'b9921937-3a47-4804-8bc9-c7e458f513c0' AND `then` = 1)) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:18:8]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:18:39]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:18:39]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:18:39]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:18:40]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:18:59]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:18:59]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:18:59]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:19:0]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:19:58]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:19:58]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:19:58]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:19:59]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:20:42]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:20:42]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:20:42]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:20:43]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:25:54]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:25:54]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:25:54]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:25:54]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:25:56]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:29:55]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:29:55]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:29:55]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:29:55]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:29:57]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:31:47]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:31:47]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:31:47]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:31:47]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:31:49]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:31:54]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:31:54]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:31:54]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:31:54]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:31:56]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:33:8]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:33:8]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:33:8]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:33:8]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:33:9]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:33:30]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:33:30]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:33:30]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:33:31]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:33:32]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:39:14]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:39:14]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:39:14]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:39:14]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:39:16]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:42:36]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:42:36]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:42:36]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:42:36]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:42:37]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:43:11]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:43:11]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:43:11]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:43:11]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:43:13]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:43:29]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:43:29]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:43:29]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:43:29]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:43:31]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:43:41]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:43:41]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:43:41]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:43:41]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:43:43]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:43:52]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:43:52]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:43:52]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:43:52]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:43:54]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:44:43]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:44:43]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:44:43]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:44:43]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:44:44]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:45:33]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:45:33]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:45:33]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:45:33]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:45:34]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:46:22]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:46:22]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:46:22]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:46:22]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:46:24]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:46:36]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:46:36]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:46:36]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:46:36]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:46:38]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:47:21]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:47:21]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:47:21]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:47:21]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:47:23]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:47:28]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:47:28]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:47:28]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:47:28]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:47:29]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:47:49]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:47:49]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-26 16:47:53]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:47:53]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:47:53]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:47:55]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:49:11]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:49:11]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-26 16:49:17]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:49:17]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:49:17]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:49:18]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:49:57]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:49:57]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:49:57]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 16:49:57]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 16:49:58]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:50:3]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 16:50:3]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-26 17:2:0]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 17:2:0]: Executing (default): SELECT `id` AS `userId`, `password`, `avatar`, `username` FROM `users` AS `User` WHERE (`User`.`username` = 'chendf' OR `User`.`email` = 'chendf') LIMIT 1; 
+[2024-10-26 17:2:0]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 17:2:0]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 17:2:3]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 17:2:3]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 17:2:3]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 17:2:3]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 17:2:9]: Executing (default): SELECT 1+1 AS result 
+[2024-10-26 17:2:11]: Executing (default): SELECT `id` AS `userId`, `username`, `email`, `avatar`, `cover`, `name`, `surname`, `description`, `city`, `school`, `work`, `website` FROM `users` AS `User` WHERE `User`.`id` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 17:2:11]: Executing (default): SELECT count(*) AS `count` FROM `posts` AS `Post` WHERE `Post`.`userId` = 'b9921937-3a47-4804-8bc9-c7e458f513c0'; 
+[2024-10-26 17:2:11]: Executing (default): SELECT COUNT(CASE WHEN followingId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followerCount`, COUNT(CASE WHEN followerId = 'b9921937-3a47-4804-8bc9-c7e458f513c0' THEN 1 END) AS `followCount` FROM `followers` AS `Follower` LIMIT 1; 
+[2024-10-26 17:2:11]: Executing (default): SELECT 1+1 AS result 

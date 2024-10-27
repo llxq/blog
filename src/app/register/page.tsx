@@ -1,6 +1,6 @@
 'use client'
 import { useUserInfo } from '@/lib/hooks/useUserInfo'
-import { rsaEncrypt } from '@/lib/utils/client'
+import { isDev, rsaEncrypt } from '@/lib/utils/client'
 import { http } from '@/lib/utils/http'
 import { QuestionCircleOutlined } from '@ant-design/icons'
 import { Button, ConfigProvider, Form, Input, message, Tooltip, type FormProps } from 'antd'
@@ -29,7 +29,7 @@ const RegisterPage = () => {
             const { againPassword, ...formModel } = form.getFieldsValue()
             // 加密
             const password = await rsaEncrypt(againPassword)
-            const { data, } = await http.post('/api/auth/register', { ...formModel, password, })
+            const { data, } = await http.post('/api/public/register', { ...formModel, password, })
             setUserInfo(data)
             message.success('注册成功，正在跳转首页')
             router.push('/', { scroll: false, })
@@ -73,6 +73,9 @@ const RegisterPage = () => {
                             ({ getFieldValue, }) => {
                                 return {
                                     validator (_, value) {
+                                        if (isDev) {
+                                            return Promise.resolve()
+                                        }
                                         if (!value || getFieldValue('password').length >= 8) {
                                             // 判断是否有大小写，数字，特殊字符
                                             if (/[A-Z]/.test(value) && /[a-z]/.test(value) && /[0-9]/.test(value) && /[^A-Za-z0-9]/.test(value)) {

@@ -1,5 +1,5 @@
 // 白名单
-export const whiteApis: Array<string | RegExp> = [/^\/api\/public\/*/, '/api/auth/login',]
+export const whiteApis: Array<string | RegExp> = [/^\/api\/public\/*/,]
 
 /**
  * 判断是否为白名单

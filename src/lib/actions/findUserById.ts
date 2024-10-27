@@ -1,4 +1,5 @@
-import { type IClientUser, User } from '@/lib/db/models'
+import { User } from '@/lib/db/models'
+import type { IClientUser } from '@/lib/utils/UserInterface'
 import { col } from 'sequelize'
 
 /**
@@ -16,5 +17,5 @@ export const findUserById = async (id: string): Promise<IClientUser> => {
         return Promise.reject('用户不存在！')
     }
 
-    return userDto as unknown as IClientUser
+    return userDto.dataValues as unknown as IClientUser
 }
